@@ -9,7 +9,7 @@
 
 # Our Mission
 
-To build the world's Engineering Intelligence Operating System that helps people design, build, understand, and continuously evolve the built environment through enduring engineering knowledge and continuous engineering reasoning.
+To build the world's Engineering Intelligence Operating System that enables people to design, build, understand, and continuously evolve the built environment through engineering intelligence, shared knowledge, and continuous reasoning.
 
 ---
 
@@ -19,9 +19,9 @@ The built environment is one of humanity's greatest achievements, yet the knowle
 
 Buildings are created through disconnected drawings, isolated documents, scattered calculations, independent software, and human experience that is rarely preserved. Valuable engineering decisions are repeatedly recreated because the understanding behind previous projects is often lost.
 
-Every project generates knowledge.
+Every project creates engineering knowledge.
 
-That knowledge should not disappear when the project ends.
+That knowledge should become part of humanity's engineering intelligence, not disappear when the project ends.
 
 Atlas exists to preserve, connect, and continuously expand engineering intelligence so that every project contributes to the next.
 
@@ -31,7 +31,11 @@ Atlas exists to preserve, connect, and continuously expand engineering intellige
 
 Atlas is an Engineering Intelligence Operating System.
 
+**Atlas understands buildings rather than merely representing them.**
+
 It continuously understands buildings, reasons about engineering decisions, preserves engineering knowledge, and assists professionals throughout the entire lifecycle of the built environment.
+
+It is a living engineering intelligence that continuously learns, reasons, and preserves knowledge throughout the lifecycle of every building.
 
 Atlas is not built to replace engineers.
 
@@ -47,7 +51,7 @@ Buildings are not static files.
 
 They are living engineering systems that continuously evolve through planning, design, construction, operation, maintenance, renovation, and future development.
 
-Atlas evolves with them.
+Atlas continuously understands and evolves with them.
 
 ---
 
@@ -85,21 +89,15 @@ Understanding should be proactive rather than reactive.
 
 Every engineering discipline contributes to a shared understanding of the building.
 
-Architecture.
+- Architecture
+- Structural Engineering
+- MEP
+- Construction
+- Planning
+- Project Management
+- Sustainability
 
-Structural Engineering.
-
-MEP.
-
-Construction.
-
-Planning.
-
-Project Management.
-
-Sustainability.
-
-Together, they form one engineering intelligence rather than isolated expertise.
+Together, they contribute to a single engineering intelligence where every discipline understands the others.
 
 ---
 
@@ -121,6 +119,8 @@ Atlas is built upon enduring engineering principles rather than temporary techno
 
 We believe buildings should be understood, not merely documented.
 
+We believe software should understand buildings, not just represent them.
+
 We believe engineering knowledge should compound instead of disappearing.
 
 We believe every engineering decision deserves context.
@@ -133,13 +133,13 @@ We believe better engineering creates better buildings.
 
 # Our Measure of Success
 
-Atlas succeeds when professionals spend less time searching for information and more time making informed engineering decisions.
+Atlas succeeds when buildings are continuously understood rather than statically documented.
 
-Atlas succeeds when every completed project makes the next project smarter.
+Atlas succeeds when every engineering decision strengthens future projects.
 
-Atlas succeeds when engineering knowledge becomes a permanent asset instead of a temporary by-product.
+Atlas succeeds when engineering knowledge compounds across generations.
 
-Atlas succeeds when the built environment continuously improves through accumulated engineering intelligence.
+Atlas succeeds when professionals spend more time creating and less time searching.
 
 ---
 
@@ -159,12 +159,14 @@ Atlas exists to support human expertise, not replace it.
 
 # Our Commitment
 
-Every feature we build, every engineering model we develop, every reasoning system we create, and every line of code we write must move us toward one purpose:
+Every decision we make, every capability we build, and every system we create must move Atlas toward one purpose:
 
-Creating an Engineering Intelligence Operating System that helps people design, build, understand, and continuously evolve the built environment through enduring engineering intelligence.
+Creating an Engineering Intelligence Operating System that enables humanity to understand, design, build, and continuously evolve the built environment through enduring engineering intelligence.
 
 ---
 
-> **Engineering knowledge should never be lost. Every building should make the next building better.**
+> **Atlas understands buildings rather than merely representing them.**
+>
+> **Engineering knowledge should never be lost. It should compound across generations.**
 
 — Atlas
