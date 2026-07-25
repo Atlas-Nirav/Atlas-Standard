@@ -1,0 +1,131 @@
+ACC-010 — Engineering Reasoning
+
+Document ID: ACC-010
+Title: Engineering Reasoning
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Engineering Reasoning, the cognitive process by which Atlas analyzes Engineering Understanding and Engineering Knowledge to derive engineering conclusions, evaluate alternatives, assess risks, and support decision-making.
+
+Engineering Reasoning is the mechanism that enables Atlas to transform preserved understanding into informed engineering judgments while maintaining explainability and traceability.
+
+2. Scope
+
+This specification applies to all reasoning processes performed within the Atlas Engineering Cognition Framework.
+
+Engineering Reasoning may be applied to:
+
+Problem analysis
+Design evaluation
+Constraint analysis
+Compliance verification
+Risk assessment
+Trade-off analysis
+Root cause analysis
+Alternative evaluation
+Impact analysis
+Engineering recommendations
+3. Canonical Definition
+
+Engineering Reasoning is the explainable cognitive process of deriving engineering conclusions by analyzing Engineering Understanding, Engineering Knowledge, Engineering Evidence, and engineering context.
+
+Engineering Reasoning does not generate facts.
+
+It derives justified conclusions from available engineering cognition.
+
+4. Characteristics
+
+Engineering Reasoning SHALL possess the following characteristics.
+
+4.1 Evidence-Based
+
+Engineering Reasoning SHALL rely on Engineering Evidence and Engineering Understanding.
+
+4.2 Knowledge-Informed
+
+Engineering Reasoning SHALL utilize applicable Engineering Knowledge where appropriate.
+
+4.3 Context-Aware
+
+Engineering Reasoning SHALL consider the engineering context in which it is performed.
+
+4.4 Explainable
+
+Every engineering conclusion SHALL be accompanied by a traceable reasoning process.
+
+4.5 Traceable
+
+Engineering Reasoning SHALL maintain links to the evidence, understanding, and knowledge that support its conclusions.
+
+4.6 Deterministic in Intent
+
+Given equivalent inputs, assumptions, and reasoning policies, Engineering Reasoning SHOULD produce consistent conclusions.
+
+4.7 Revisable
+
+Engineering conclusions MAY be revised when Engineering Understanding or Engineering Evidence changes.
+
+5. Relationships
+
+Engineering Reasoning consumes engineering cognition and produces engineering conclusions that support decisions.
+
+Engineering Evidence
+        │
+        ▼
+Engineering Understanding
+        │
+        ▼
+Engineering Knowledge
+        │
+        ▼
+Engineering Reasoning
+        │
+        ▼
+Decision Support
+
+Engineering Reasoning:
+
+Uses Engineering Understanding as its primary cognitive model.
+Applies Engineering Knowledge where relevant.
+Evaluates Engineering Evidence.
+Produces justified engineering conclusions.
+Supports Decision Support.
+6. Responsibilities
+
+Engineering Reasoning is responsible for:
+
+Analyzing engineering situations.
+Evaluating engineering alternatives.
+Identifying engineering risks.
+Resolving engineering conflicts.
+Generating engineering conclusions.
+Providing explainable engineering recommendations.
+Maintaining reasoning traceability.
+7. Normative Requirements
+
+Engineering Reasoning SHALL:
+
+Operate on Engineering Understanding.
+Reference applicable Engineering Knowledge.
+Preserve traceability to supporting Engineering Evidence.
+Record assumptions that materially influence conclusions.
+Produce explainable engineering outputs.
+Support revision when underlying cognition changes.
+
+Atlas SHALL NOT produce engineering conclusions without traceable supporting reasoning.
+
+8. Non-Goals
+
+Engineering Reasoning does not:
+
+Replace Engineering Evidence.
+Replace Engineering Understanding.
+Replace human engineering judgment.
+Guarantee optimal solutions.
+Modify Engineering Reality.
+Authorize engineering decisions.
+9. Future Evolution
+
+Future revisions MAY define reasoning strategies, inference models, optimization techniques, uncertainty propagation, conflict resolution mechanisms, and multi-agent reasoning architectures without changing the canonical definition established by this specification.

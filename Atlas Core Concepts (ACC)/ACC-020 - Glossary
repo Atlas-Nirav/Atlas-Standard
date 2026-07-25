@@ -1,0 +1,135 @@
+ACC-020 — Glossary
+
+Document ID: ACC-020
+Title: Glossary
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification establishes the canonical vocabulary of the Atlas Engineering Cognition Framework (AECF).
+
+The Glossary provides authoritative definitions for engineering cognition concepts used throughout the Atlas specifications, ensuring consistency, interoperability, and unambiguous communication.
+
+Where a conflict exists between another specification and this Glossary, the canonical definition defined herein SHALL take precedence unless explicitly superseded by a future revision.
+
+2. Scope
+
+This Glossary applies to all specifications within the Atlas Engineering Cognition Framework, including but not limited to:
+
+Atlas Core Concepts (ACC)
+Atlas Hivemind Specification (AHS)
+Engineering Understanding Specification (EUS)
+Engineering Memory Specification (EMS)
+Engineering Knowledge Specification (EKS)
+Engineering Evidence Specification (EES)
+Engineering Reasoning Specification (ERS)
+Engineering Capability Specification (ECS)
+Decision Support Specification (DSS)
+3. Canonical Terms
+Atlas Engineering Cognition Framework (AECF)
+
+The overarching architectural framework that defines the principles, concepts, specifications, and relationships governing engineering cognition within Atlas.
+
+Atlas Core Concepts (ACC)
+
+The foundational ontology that defines the canonical concepts used throughout the Atlas Engineering Cognition Framework.
+
+Engineering Reality
+
+The objective engineering environment consisting of physical systems, digital systems, processes, behaviors, and conditions that exist independently of Atlas.
+
+Engineering Observation
+
+The acquisition of information describing Engineering Reality through observation, measurement, monitoring, inspection, simulation, documentation, or other verifiable means.
+
+Engineering Evidence
+
+Validated and contextually relevant information that supports, contradicts, or qualifies Engineering Understanding.
+
+Engineering Understanding
+
+The continuously evolving cognitive representation of Engineering Reality constructed from Engineering Evidence and interpreted within Engineering Context.
+
+Engineering Memory
+
+The persistent preservation of Engineering Understanding together with supporting context, evidence, reasoning, and provenance.
+
+Engineering Knowledge
+
+Stable, validated, and reusable Engineering Understanding preserved through repeated verification and applicable across one or more engineering contexts.
+
+Engineering Reasoning
+
+The explainable cognitive process of deriving engineering conclusions through analysis of Engineering Understanding, Engineering Knowledge, Engineering Evidence, and Engineering Context.
+
+Engineering Capability
+
+A reusable cognitive function that applies engineering cognition to accomplish a defined engineering objective.
+
+Decision Support
+
+The structured presentation of engineering conclusions, recommendations, alternatives, confidence, and supporting rationale to assist informed engineering decision-making.
+
+Engineering Context
+
+The complete set of conditions, assumptions, relationships, and environmental factors required for correct interpretation of engineering cognition.
+
+Engineering Intent
+
+The explicitly defined engineering objective that directs engineering cognition toward a desired engineering outcome.
+
+Engineering Constraints
+
+The governing limitations, requirements, and boundaries that engineering cognition must satisfy.
+
+Engineering Confidence
+
+The explicit expression of certainty associated with engineering cognition based upon available evidence and reasoning.
+
+Engineering Traceability
+
+The capability to identify and verify the relationships connecting engineering observations, evidence, understanding, reasoning, decisions, and outcomes.
+
+Engineering Explainability
+
+The capability to communicate the reasoning, evidence, assumptions, constraints, context, and knowledge that justify engineering conclusions.
+
+Engineering Cognition Lifecycle
+
+The continuous process through which engineering cognition is acquired, validated, understood, preserved, generalized, applied, evaluated, and refined over time.
+
+4. Abbreviations
+Abbreviation	Meaning
+AECF	Atlas Engineering Cognition Framework
+ACC	Atlas Core Concepts
+AHS	Atlas Hivemind Specification
+EUS	Engineering Understanding Specification
+EMS	Engineering Memory Specification
+EKS	Engineering Knowledge Specification
+EES	Engineering Evidence Specification
+ERS	Engineering Reasoning Specification
+ECS	Engineering Capability Specification
+DSS	Decision Support Specification
+5. Terminology Rules
+
+The following rules apply throughout the Atlas ecosystem.
+
+Every defined term SHALL have exactly one canonical definition.
+Specifications SHALL reference canonical definitions rather than redefining them.
+New concepts SHALL be introduced through Atlas Core Concepts before being referenced by other specifications.
+Terminology SHALL remain technology independent.
+Synonyms SHOULD be avoided unless explicitly defined.
+6. Conformance
+
+A specification conforms to the Atlas Glossary if it:
+
+Uses canonical terminology consistently.
+References Atlas Core Concepts where appropriate.
+Avoids conflicting definitions.
+Preserves semantic consistency across the framework.
+7. Future Evolution
+
+Additional glossary entries MAY be introduced as new canonical concepts are added to the Atlas Engineering Cognition Framework.
+
+Existing canonical definitions SHALL NOT be modified incompatibly without a formal versioned revision.

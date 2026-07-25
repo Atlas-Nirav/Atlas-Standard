@@ -1,0 +1,116 @@
+ACC-021 — Concept Relationship Matrix
+
+Document ID: ACC-021
+Title: Concept Relationship Matrix
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the canonical relationships among the Atlas Core Concepts.
+
+The Concept Relationship Matrix establishes how concepts interact, depend upon one another, and participate within the Atlas Engineering Cognition Framework (AECF). It serves as the authoritative reference for conceptual consistency across all Atlas specifications and implementations.
+
+2. Scope
+
+This specification applies to all canonical concepts defined within Atlas Core Concepts.
+
+It defines:
+
+Concept dependencies
+Permitted relationships
+Lifecycle participation
+Information flow
+Cognitive responsibilities
+
+This specification does not define implementation architecture or data models.
+
+3. Canonical Relationship Types
+
+The following relationship types SHALL be used consistently throughout the Atlas ecosystem.
+
+Relationship	Description
+Originates From	A concept is created from another concept.
+Consumes	A concept uses another concept as input.
+Produces	A concept creates another concept as output.
+Preserves	A concept retains another concept over time.
+Supports	A concept assists another concept.
+Governed By	A concept is constrained by a governing concept.
+Qualified By	A concept is described by a quality attribute.
+Influences	A concept affects another concept without directly producing it.
+4. Canonical Relationship Matrix
+Concept	Originates From	Produces	Supports	Governed By	Qualified By
+Engineering Reality	—	Engineering Observation	All cognition	—	—
+Engineering Observation	Engineering Reality	Engineering Evidence	Engineering Evidence	Context, Intent	Traceability
+Engineering Evidence	Engineering Observation	Engineering Understanding	Engineering Reasoning	Context, Constraints	Confidence, Traceability
+Engineering Understanding	Engineering Evidence	Engineering Memory	Engineering Reasoning	Context, Intent, Constraints	Confidence, Traceability, Explainability
+Engineering Memory	Engineering Understanding	Engineering Knowledge	Engineering Understanding	Context	Traceability
+Engineering Knowledge	Engineering Memory	Engineering Reasoning	Engineering Capability	Context	Confidence, Traceability
+Engineering Reasoning	Understanding, Knowledge	Engineering Conclusions	Engineering Capability	Context, Intent, Constraints	Confidence, Traceability, Explainability
+Engineering Capability	Engineering Reasoning	Decision Support	Decision Support	Context, Intent, Constraints	Confidence, Explainability
+Decision Support	Engineering Capability	Human Decisions	Engineering Processes	Context, Intent, Constraints	Confidence, Traceability, Explainability
+5. Cross-Cutting Relationships
+
+The following concepts apply across the entire cognitive framework.
+
+Concept	Applies To
+Engineering Context	All cognitive concepts
+Engineering Intent	Observation through Decision Support
+Engineering Constraints	Evidence through Decision Support
+Engineering Confidence	Evidence through Decision Support
+Engineering Traceability	All cognitive artifacts
+Engineering Explainability	Understanding through Decision Support
+6. Cognitive Dependency Model
+Engineering Reality
+        │
+        ▼
+Engineering Observation
+        │
+        ▼
+Engineering Evidence
+        │
+        ▼
+Engineering Understanding
+        │
+        ├─────────────┐
+        ▼             ▼
+Engineering Memory  Engineering Reasoning
+        │             ▲
+        ▼             │
+Engineering Knowledge │
+        └─────────────┘
+              │
+              ▼
+Engineering Capability
+              │
+              ▼
+Decision Support
+7. Normative Requirements
+
+Implementations SHALL:
+
+Preserve all canonical concept relationships.
+Avoid introducing circular dependencies unless explicitly defined.
+Maintain semantic consistency between concepts.
+Preserve traceability across relationships.
+Conform to the dependency model defined by this specification.
+8. Conformance
+
+A specification conforms to this document if it:
+
+Uses only canonical relationships defined herein.
+Does not introduce contradictory dependencies.
+Preserves the integrity of the Atlas concept model.
+Maintains compatibility with Atlas Core Concepts.
+9. Non-Goals
+
+This specification does not:
+
+Define implementation architecture.
+Define storage models.
+Define APIs.
+Define reasoning algorithms.
+Define software components.
+10. Future Evolution
+
+Future revisions MAY introduce additional relationship types, domain-specific concept matrices, semantic mappings, and machine-readable relationship models, provided they remain consistent with the canonical concepts defined by ACC.

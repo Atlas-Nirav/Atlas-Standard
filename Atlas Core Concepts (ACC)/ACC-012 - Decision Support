@@ -1,0 +1,152 @@
+ACC-012 — Decision Support
+
+Document ID: ACC-012
+Title: Decision Support
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Decision Support, the cognitive function through which Atlas communicates engineering conclusions, recommendations, alternatives, and supporting rationale to assist engineering decision-making.
+
+Decision Support transforms Engineering Reasoning and Engineering Capability outputs into actionable guidance while preserving transparency, traceability, and human oversight.
+
+2. Scope
+
+This specification applies to all decision support generated within the Atlas Engineering Cognition Framework.
+
+Decision Support may assist with:
+
+Design decisions
+Planning decisions
+Compliance decisions
+Construction decisions
+Maintenance decisions
+Risk mitigation
+Alternative selection
+Resource allocation
+Engineering approvals
+Operational decisions
+Strategic engineering planning
+
+This specification defines support for decisions, not autonomous decision-making.
+
+3. Canonical Definition
+
+Decision Support is the structured presentation of engineering conclusions, recommendations, alternatives, confidence, and supporting rationale to assist informed engineering decision-making.
+
+Decision Support assists decision-makers.
+
+It does not replace them.
+
+4. Characteristics
+
+Decision Support SHALL possess the following characteristics.
+
+4.1 Explainable
+
+Decision Support SHALL provide sufficient explanation to justify every recommendation.
+
+4.2 Evidence-Based
+
+Decision Support SHALL be supported by Engineering Evidence.
+
+4.3 Reasoning-Informed
+
+Decision Support SHALL be derived from Engineering Reasoning.
+
+4.4 Context-Aware
+
+Decision Support SHALL be presented within the applicable engineering context.
+
+4.5 Transparent
+
+Decision Support SHALL disclose assumptions, limitations, uncertainties, and confidence where applicable.
+
+4.6 Action-Oriented
+
+Decision Support SHALL assist engineering decision-makers in evaluating feasible courses of action.
+
+4.7 Human-Centric
+
+Decision Support SHALL preserve the authority of qualified engineers and designated decision-makers.
+
+4.8 Traceable
+
+Decision Support SHALL maintain traceability to the Engineering Understanding, Engineering Evidence, and Engineering Reasoning that produced it.
+
+5. Relationships
+
+Decision Support is the final cognitive output of the Atlas Engineering Cognition Framework.
+
+Engineering Reality
+        │
+        ▼
+Engineering Observation
+        │
+        ▼
+Engineering Evidence
+        │
+        ▼
+Engineering Understanding
+        │
+        ▼
+Engineering Memory
+        │
+        ▼
+Engineering Knowledge
+        │
+        ▼
+Engineering Reasoning
+        │
+        ▼
+Engineering Capability
+        │
+        ▼
+Decision Support
+        │
+        ▼
+Human Engineer / External System
+
+Decision Support:
+
+Consumes Engineering Capability outputs.
+Presents Engineering Reasoning results.
+References Engineering Understanding and Engineering Knowledge.
+Assists human engineers and external systems.
+6. Responsibilities
+
+Decision Support is responsible for:
+
+Presenting engineering recommendations.
+Presenting engineering alternatives.
+Explaining engineering conclusions.
+Communicating engineering risks.
+Reporting confidence and uncertainty.
+Supporting informed engineering decisions.
+Preserving transparency and accountability.
+7. Normative Requirements
+
+Decision Support SHALL:
+
+Be derived from Engineering Reasoning.
+Reference applicable Engineering Understanding and Engineering Evidence.
+Preserve traceability to supporting engineering cognition.
+Clearly distinguish facts, assumptions, recommendations, and uncertainties.
+Present sufficient information for informed engineering decisions.
+
+Atlas SHALL NOT represent Decision Support as an autonomous engineering decision unless explicitly authorized within a defined operational context.
+
+8. Non-Goals
+
+Decision Support does not:
+
+Replace Engineering Reasoning.
+Replace qualified engineering judgment.
+Guarantee engineering outcomes.
+Override regulatory requirements.
+Assume legal or professional responsibility for engineering decisions.
+Modify Engineering Reality.
+9. Future Evolution
+
+Future revisions MAY define decision support presentation models, prioritization strategies, collaborative decision workflows, human-AI interaction patterns, and autonomous decision delegation mechanisms without changing the canonical definition established by this specification.

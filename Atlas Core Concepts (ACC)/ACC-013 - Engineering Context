@@ -1,0 +1,148 @@
+ACC-013 — Engineering Context
+
+Document ID: ACC-013
+Title: Engineering Context
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Engineering Context, the set of conditions, relationships, assumptions, and constraints within which engineering cognition is interpreted.
+
+Engineering Context ensures that Engineering Observations, Engineering Evidence, Engineering Understanding, Engineering Reasoning, Engineering Capabilities, and Decision Support are interpreted according to their applicable engineering environment.
+
+2. Scope
+
+This specification applies to every cognitive artifact and process within the Atlas Engineering Cognition Framework.
+
+Engineering Context may include, but is not limited to:
+
+Project information
+Engineering discipline
+Geographic location
+Regulatory environment
+Applicable standards and codes
+Design assumptions
+Operational conditions
+Environmental conditions
+Temporal conditions
+Stakeholders
+System boundaries
+Resource availability
+Lifecycle phase
+
+Engineering Context applies across the entire engineering cognition lifecycle.
+
+3. Canonical Definition
+
+Engineering Context is the complete set of conditions, relationships, assumptions, constraints, and environmental factors required to correctly interpret engineering information and cognition.
+
+Engineering information cannot be fully understood without its context.
+
+4. Characteristics
+
+Engineering Context SHALL possess the following characteristics.
+
+4.1 Explicit
+
+Engineering Context SHALL be explicitly represented whenever practical.
+
+4.2 Relevant
+
+Only context relevant to the engineering objective SHOULD influence engineering cognition.
+
+4.3 Dynamic
+
+Engineering Context MAY change throughout the engineering lifecycle.
+
+4.4 Multi-Dimensional
+
+Engineering Context MAY include technical, operational, regulatory, environmental, organizational, temporal, and spatial dimensions.
+
+4.5 Traceable
+
+Engineering Context SHALL maintain traceability to the engineering artifacts and reasoning processes it influences.
+
+4.6 Shared
+
+Engineering Context MAY be shared across multiple Engineering Understandings, Reasoning processes, and Capabilities.
+
+4.7 Evolvable
+
+Engineering Context SHALL evolve as engineering conditions change.
+
+5. Relationships
+
+Engineering Context influences every stage of engineering cognition.
+
+                    Engineering Context
+                            │
+                            ▼
+Engineering Reality
+        │
+        ▼
+Engineering Observation
+        │
+        ▼
+Engineering Evidence
+        │
+        ▼
+Engineering Understanding
+        │
+        ▼
+Engineering Memory
+        │
+        ▼
+Engineering Knowledge
+        │
+        ▼
+Engineering Reasoning
+        │
+        ▼
+Engineering Capability
+        │
+        ▼
+Decision Support
+
+Engineering Context:
+
+Influences interpretation.
+Influences reasoning.
+Influences confidence.
+Influences engineering decisions.
+Does not replace evidence or understanding.
+6. Responsibilities
+
+Engineering Context is responsible for:
+
+Providing interpretation boundaries.
+Identifying applicable engineering conditions.
+Supporting accurate reasoning.
+Preventing context-independent conclusions.
+Preserving engineering assumptions.
+Maintaining consistency across engineering cognition.
+7. Normative Requirements
+
+Engineering Context SHALL:
+
+Be associated with Engineering Understanding.
+Be considered during Engineering Reasoning.
+Be preserved within Engineering Memory.
+Support traceability across engineering cognition.
+Be updated when relevant engineering conditions change.
+
+Atlas SHALL NOT interpret Engineering Evidence without considering its applicable Engineering Context.
+
+8. Non-Goals
+
+Engineering Context does not:
+
+Represent Engineering Reality.
+Replace Engineering Evidence.
+Replace Engineering Understanding.
+Perform Engineering Reasoning.
+Produce engineering decisions.
+Define Engineering Knowledge.
+9. Future Evolution
+
+Future revisions MAY define formal context ontologies, context inheritance mechanisms, contextual conflict resolution, multi-context reasoning, and domain-specific context models without changing the canonical definition established by this specification.

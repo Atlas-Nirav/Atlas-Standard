@@ -1,0 +1,145 @@
+ACC-011 — Engineering Capability
+
+Document ID: ACC-011
+Title: Engineering Capability
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Engineering Capability, the reusable cognitive functions that Atlas performs using Engineering Understanding, Engineering Knowledge, Engineering Evidence, and Engineering Reasoning.
+
+Engineering Capabilities represent the operational abilities of Atlas to perform engineering tasks in support of analysis, evaluation, prediction, validation, optimization, and decision support.
+
+2. Scope
+
+This specification applies to all engineering capabilities implemented within the Atlas Engineering Cognition Framework.
+
+Engineering Capabilities may include, but are not limited to:
+
+Engineering analysis
+Design validation
+Code and standards compliance verification
+Structural assessment
+Risk assessment
+Root cause analysis
+Optimization
+Simulation evaluation
+Prediction
+Recommendation generation
+Change impact analysis
+Quantity estimation
+Cost estimation
+Schedule analysis
+Constructability assessment
+
+This specification defines the concept of capability rather than specific capability implementations.
+
+3. Canonical Definition
+
+Engineering Capability is a reusable cognitive function that applies Engineering Understanding, Engineering Knowledge, Engineering Evidence, and Engineering Reasoning to accomplish a defined engineering objective.
+
+Capabilities represent what Atlas can perform, not the data it stores or the reasoning process itself.
+
+4. Characteristics
+
+Engineering Capability SHALL possess the following characteristics.
+
+4.1 Goal-Oriented
+
+Every Engineering Capability SHALL pursue a defined engineering objective.
+
+4.2 Cognition-Driven
+
+Engineering Capability SHALL utilize Engineering Understanding as its primary cognitive input.
+
+4.3 Evidence-Based
+
+Engineering Capability SHALL rely upon Engineering Evidence where applicable.
+
+4.4 Knowledge-Informed
+
+Engineering Capability SHALL utilize relevant Engineering Knowledge when available.
+
+4.5 Explainable
+
+The outputs of an Engineering Capability SHALL be explainable through traceable reasoning and supporting evidence.
+
+4.6 Context-Aware
+
+Engineering Capability SHALL operate within an explicit engineering context.
+
+4.7 Reusable
+
+Engineering Capabilities SHALL be reusable across applicable engineering domains and projects.
+
+4.8 Composable
+
+Engineering Capabilities MAY be combined to create higher-level engineering workflows.
+
+5. Relationships
+
+Engineering Capability builds upon the complete Atlas cognitive foundation.
+
+Engineering Evidence
+        │
+        ▼
+Engineering Understanding
+        │
+        ▼
+Engineering Knowledge
+        │
+        ▼
+Engineering Reasoning
+        │
+        ▼
+Engineering Capability
+        │
+        ▼
+Decision Support
+
+Engineering Capability:
+
+Uses Engineering Understanding.
+Applies Engineering Reasoning.
+References Engineering Knowledge.
+Consumes Engineering Evidence.
+Produces engineering outcomes.
+Supports Decision Support.
+6. Responsibilities
+
+Engineering Capability is responsible for:
+
+Performing engineering analyses.
+Solving engineering problems.
+Evaluating engineering alternatives.
+Producing engineering recommendations.
+Supporting engineering workflows.
+Delivering reusable engineering functionality.
+Maintaining explainability and traceability.
+7. Normative Requirements
+
+Engineering Capabilities SHALL:
+
+Operate upon Engineering Understanding.
+Utilize Engineering Reasoning.
+Reference applicable Engineering Knowledge.
+Preserve traceability to Engineering Evidence.
+Produce explainable engineering outputs.
+Support repeatable engineering execution.
+
+Atlas SHALL NOT expose Engineering Capabilities that cannot provide sufficient engineering justification for their outputs.
+
+8. Non-Goals
+
+Engineering Capability does not:
+
+Define Engineering Reality.
+Replace Engineering Understanding.
+Replace Engineering Reasoning.
+Replace Engineering Knowledge.
+Authorize engineering decisions.
+Replace qualified engineering professionals.
+9. Future Evolution
+
+Future revisions MAY define capability taxonomies, capability composition models, orchestration mechanisms, domain-specific capability libraries, and autonomous execution patterns without changing the canonical definition established by this specification.

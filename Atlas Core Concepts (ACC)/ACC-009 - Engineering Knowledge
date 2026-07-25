@@ -1,0 +1,131 @@
+ACC-009 — Engineering Knowledge
+
+Document ID: ACC-009
+Title: Engineering Knowledge
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Engineering Knowledge, the stable and reusable body of validated engineering understanding maintained within the Atlas Engineering Cognition Framework (AECF).
+
+Engineering Knowledge represents engineering understanding that has demonstrated sufficient validity, consistency, and applicability to be reused across multiple engineering contexts while remaining subject to future refinement.
+
+2. Scope
+
+This specification applies to all Engineering Knowledge maintained, shared, or consumed within Atlas.
+
+Engineering Knowledge may include:
+
+Engineering principles
+Design patterns
+Engineering rules
+Best practices
+Engineering methods
+Validated models
+Domain relationships
+Engineering heuristics
+Reusable engineering solutions
+Lessons learned
+
+Engineering Knowledge is independent of any single project, observation, or reasoning session.
+
+3. Canonical Definition
+
+Engineering Knowledge is stable, validated, and reusable engineering understanding that has been preserved through repeated verification and is applicable across one or more engineering contexts.
+
+Engineering Knowledge is not simply stored information.
+
+It is understanding that has matured through continued validation and practical applicability.
+
+4. Characteristics
+
+Engineering Knowledge SHALL possess the following characteristics.
+
+4.1 Validated
+
+Engineering Knowledge SHALL be supported by validated Engineering Understanding.
+
+4.2 Reusable
+
+Engineering Knowledge SHALL be applicable beyond the context in which it was originally developed.
+
+4.3 Stable
+
+Engineering Knowledge SHALL exhibit relative stability while remaining open to refinement as new evidence emerges.
+
+4.4 Traceable
+
+Engineering Knowledge SHALL maintain traceability to the Engineering Understanding and Engineering Evidence from which it originated.
+
+4.5 Explainable
+
+Engineering Knowledge SHALL support transparent explanation of its origin, rationale, and applicability.
+
+4.6 Generalized
+
+Engineering Knowledge SHALL abstract reusable engineering concepts from specific engineering situations.
+
+4.7 Evolvable
+
+Engineering Knowledge MAY evolve when substantial new Engineering Evidence or Engineering Understanding justifies revision.
+
+5. Relationships
+
+Engineering Knowledge emerges from validated Engineering Understanding preserved through Engineering Memory.
+
+Engineering Understanding
+        │
+        ▼
+Engineering Memory
+        │
+        ▼
+Engineering Knowledge
+        │
+        ▼
+Engineering Reasoning
+        │
+        ▼
+Decision Support
+
+Engineering Knowledge:
+
+Originates from Engineering Understanding.
+Is preserved through Engineering Memory.
+Supports Engineering Reasoning.
+Informs future Engineering Understanding.
+6. Responsibilities
+
+Engineering Knowledge is responsible for:
+
+Preserving validated engineering concepts.
+Supporting reusable engineering reasoning.
+Providing consistent engineering guidance.
+Enabling efficient engineering cognition.
+Supporting knowledge transfer across engineering domains.
+Maintaining traceability to its supporting foundations.
+7. Normative Requirements
+
+Engineering Knowledge SHALL:
+
+Be derived from validated Engineering Understanding.
+Maintain traceability to supporting Engineering Memory and Engineering Evidence.
+Be reusable across applicable engineering contexts.
+Preserve explanatory information regarding its origin and applicability.
+Be revised when justified by significant new evidence.
+
+Atlas SHALL NOT classify transient or unvalidated understanding as Engineering Knowledge.
+
+8. Non-Goals
+
+Engineering Knowledge does not:
+
+Replace Engineering Reality.
+Replace Engineering Observation.
+Replace Engineering Evidence.
+Replace current Engineering Understanding.
+Eliminate the need for Engineering Reasoning.
+Represent immutable engineering truth.
+9. Future Evolution
+
+Future revisions MAY introduce formal knowledge representation models, ontology mappings, inference structures, and domain-specific knowledge taxonomies without changing the canonical definition established by this specification.

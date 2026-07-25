@@ -1,0 +1,146 @@
+ACC-014 — Engineering Intent
+
+Document ID: ACC-014
+Title: Engineering Intent
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Engineering Intent, the objective that directs engineering cognition within the Atlas Engineering Cognition Framework (AECF).
+
+Engineering Intent establishes the desired engineering outcome that guides Engineering Observation, Engineering Understanding, Engineering Reasoning, Engineering Capability, and Decision Support.
+
+It ensures that engineering cognition remains purposeful, relevant, and aligned with engineering objectives.
+
+2. Scope
+
+This specification applies to all engineering cognition performed within Atlas.
+
+Engineering Intent may represent objectives such as:
+
+Design
+Analysis
+Validation
+Optimization
+Inspection
+Compliance verification
+Risk assessment
+Failure investigation
+Cost estimation
+Quantity estimation
+Planning
+Simulation
+Prediction
+Monitoring
+Maintenance
+Decision support
+
+Engineering Intent applies to both human-initiated and autonomous engineering workflows.
+
+3. Canonical Definition
+
+Engineering Intent is the explicitly defined engineering objective that directs and constrains engineering cognition toward achieving a desired engineering outcome.
+
+Engineering Intent defines what Atlas is trying to accomplish, not how it accomplishes it.
+
+4. Characteristics
+
+Engineering Intent SHALL possess the following characteristics.
+
+4.1 Explicit
+
+Engineering Intent SHALL be explicitly defined before initiating engineering cognition whenever practical.
+
+4.2 Goal-Oriented
+
+Engineering Intent SHALL identify a specific engineering objective.
+
+4.3 Context-Dependent
+
+Engineering Intent SHALL be interpreted within the applicable Engineering Context.
+
+4.4 Traceable
+
+Engineering Intent SHALL remain traceable throughout the engineering cognition lifecycle.
+
+4.5 Stable
+
+Engineering Intent SHOULD remain stable during a reasoning session unless explicitly revised.
+
+4.6 Measurable
+
+Engineering Intent SHOULD enable evaluation of whether the intended engineering objective has been achieved.
+
+4.7 Evolvable
+
+Engineering Intent MAY evolve as engineering requirements or stakeholder objectives change.
+
+5. Relationships
+
+Engineering Intent influences the execution of engineering cognition.
+
+                    Engineering Intent
+                            │
+                            ▼
+Engineering Context ─────────┐
+                             ▼
+Engineering Observation
+        │
+        ▼
+Engineering Evidence
+        │
+        ▼
+Engineering Understanding
+        │
+        ▼
+Engineering Reasoning
+        │
+        ▼
+Engineering Capability
+        │
+        ▼
+Decision Support
+
+Engineering Intent:
+
+Directs Engineering Observation.
+Focuses Engineering Reasoning.
+Determines applicable Engineering Capabilities.
+Shapes Decision Support.
+Does not alter Engineering Reality.
+6. Responsibilities
+
+Engineering Intent is responsible for:
+
+Defining engineering objectives.
+Guiding engineering cognition.
+Prioritizing relevant engineering information.
+Aligning engineering reasoning with desired outcomes.
+Supporting evaluation of engineering results.
+Maintaining objective consistency throughout engineering workflows.
+7. Normative Requirements
+
+Engineering Intent SHALL:
+
+Define a clear engineering objective.
+Be associated with Engineering Context.
+Guide Engineering Reasoning and Engineering Capability selection.
+Remain traceable throughout engineering cognition.
+Be reviewed when engineering objectives materially change.
+
+Atlas SHALL NOT initiate autonomous engineering reasoning without a defined Engineering Intent.
+
+8. Non-Goals
+
+Engineering Intent does not:
+
+Represent Engineering Reality.
+Replace Engineering Context.
+Perform Engineering Reasoning.
+Define Engineering Knowledge.
+Guarantee successful engineering outcomes.
+Authorize engineering decisions.
+9. Future Evolution
+
+Future revisions MAY define intent hierarchies, intent decomposition, intent conflict resolution, multi-objective engineering optimization, and collaborative intent management without changing the canonical definition established by this specification.

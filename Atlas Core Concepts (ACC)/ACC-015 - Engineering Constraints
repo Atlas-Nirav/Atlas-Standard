@@ -1,0 +1,155 @@
+ACC-015 — Engineering Constraints
+
+Document ID: ACC-015
+Title: Engineering Constraints
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Engineering Constraints, the limitations, requirements, and boundaries that govern engineering cognition within the Atlas Engineering Cognition Framework (AECF).
+
+Engineering Constraints ensure that Engineering Understanding, Engineering Reasoning, Engineering Capabilities, and Decision Support operate within applicable physical, technical, regulatory, organizational, and operational limits.
+
+2. Scope
+
+This specification applies to all engineering cognition performed within Atlas.
+
+Engineering Constraints may include, but are not limited to:
+
+Physical laws
+Engineering standards and codes
+Regulatory requirements
+Safety requirements
+Design criteria
+Material properties
+Resource availability
+Budget limitations
+Schedule limitations
+Environmental conditions
+Operational limitations
+Manufacturing limitations
+Construction limitations
+Stakeholder requirements
+Organizational policies
+
+Engineering Constraints apply throughout the engineering cognition lifecycle.
+
+3. Canonical Definition
+
+Engineering Constraints are the explicit limitations, requirements, and governing conditions that define the permissible boundaries of engineering cognition and engineering outcomes.
+
+Engineering Constraints define what must be respected, regardless of the engineering objective.
+
+4. Characteristics
+
+Engineering Constraints SHALL possess the following characteristics.
+
+4.1 Explicit
+
+Engineering Constraints SHALL be explicitly identified whenever practical.
+
+4.2 Governing
+
+Engineering Constraints SHALL define permissible engineering boundaries.
+
+4.3 Context-Dependent
+
+The applicability of an Engineering Constraint SHALL depend upon the relevant Engineering Context.
+
+4.4 Traceable
+
+Engineering Constraints SHALL remain traceable throughout engineering cognition.
+
+4.5 Verifiable
+
+Compliance with Engineering Constraints SHALL be capable of verification.
+
+4.6 Evolvable
+
+Engineering Constraints MAY change as regulations, standards, technologies, or project conditions evolve.
+
+4.7 Hierarchical
+
+Engineering Constraints MAY possess different levels of authority and precedence.
+
+For example:
+
+Physical laws
+Legal and regulatory requirements
+Engineering standards
+Organizational policies
+Project-specific requirements
+
+Conflicts SHOULD be resolved according to their governing authority.
+
+5. Relationships
+
+Engineering Constraints influence every stage of engineering cognition.
+
+                  Engineering Context
+                         │
+                         ▼
+                  Engineering Intent
+                         │
+                         ▼
+               Engineering Constraints
+                         │
+                         ▼
+Engineering Observation → Engineering Evidence
+                         │
+                         ▼
+              Engineering Understanding
+                         │
+                         ▼
+               Engineering Reasoning
+                         │
+                         ▼
+              Engineering Capability
+                         │
+                         ▼
+                 Decision Support
+
+Engineering Constraints:
+
+Limit engineering reasoning.
+Restrict engineering capabilities.
+Influence engineering decisions.
+Define acceptable engineering solutions.
+Do not alter Engineering Reality.
+6. Responsibilities
+
+Engineering Constraints are responsible for:
+
+Defining engineering boundaries.
+Preventing invalid engineering conclusions.
+Supporting compliance verification.
+Guiding engineering optimization.
+Preserving engineering safety.
+Supporting regulatory conformity.
+Maintaining engineering integrity.
+7. Normative Requirements
+
+Engineering Constraints SHALL:
+
+Be considered during Engineering Reasoning.
+Be available to Engineering Capabilities.
+Influence Decision Support.
+Be preserved within Engineering Memory where relevant.
+Remain traceable to their originating authority.
+
+Atlas SHALL NOT recommend engineering solutions that knowingly violate mandatory Engineering Constraints unless explicitly performing a compliance or exception analysis.
+
+8. Non-Goals
+
+Engineering Constraints do not:
+
+Define Engineering Reality.
+Replace Engineering Intent.
+Replace Engineering Context.
+Perform Engineering Reasoning.
+Produce engineering decisions.
+Guarantee engineering success.
+9. Future Evolution
+
+Future revisions MAY define constraint ontologies, constraint inheritance, conflict resolution mechanisms, optimization under constraints, and automated compliance validation without changing the canonical definition established by this specification.
