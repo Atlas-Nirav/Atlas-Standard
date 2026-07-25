@@ -1,0 +1,226 @@
+AHS-004 — Overall Architecture
+
+Document ID: AHS-004
+Title: Overall Architecture
+Version: 1.0.0-draft
+Status: Draft
+
+Architectural Views: Conceptual, Logical
+
+1. Purpose
+
+This specification defines the canonical high-level architecture of the Atlas Engineering Cognition Framework (AECF).
+
+It establishes the major architectural layers, core components, and interaction model that collectively implement engineering cognition as defined by the Atlas Core Concepts (ACC).
+
+The Overall Architecture provides the primary structural blueprint for all Atlas implementations.
+
+2. Scope
+
+This specification defines:
+
+Architectural layers
+Core architectural components
+System boundaries
+High-level interactions
+Architectural responsibilities
+External interfaces
+
+This specification does not define internal algorithms or implementation technologies.
+
+3. Architectural Objectives
+
+The Atlas architecture SHALL:
+
+Implement all canonical concepts defined by ACC.
+Preserve conceptual integrity.
+Support modular implementation.
+Enable explainable engineering cognition.
+Scale from a single engineering workstation to distributed enterprise deployments.
+Remain independent of implementation technologies.
+4. Architectural Philosophy
+
+Atlas is designed as a layered cognitive architecture.
+
+Each layer performs a distinct responsibility while exposing well-defined services to adjacent layers.
+
+No layer SHALL bypass another unless explicitly permitted by this specification.
+
+This layered approach promotes:
+
+Separation of concerns
+Replaceable implementations
+Predictable information flow
+Easier testing and validation
+Long-term maintainability
+5. Canonical Architecture
+                        Users
+                          │
+                          ▼
+                Decision Support Layer
+                          │
+                          ▼
+                Capability Layer
+                          │
+                          ▼
+                Reasoning Layer
+                          │
+                          ▼
+        Understanding & Knowledge Layer
+             ┌────────────┴────────────┐
+             ▼                         ▼
+       Understanding              Knowledge
+             │                         ▲
+             ▼                         │
+            Memory ────────────────────┘
+                          │
+                          ▼
+                 Evidence Layer
+                          │
+                          ▼
+               Observation Layer
+                          │
+                          ▼
+                Engineering Reality
+
+Cross-cutting across every layer:
+
+Engineering Context
+Engineering Intent
+Engineering Constraints
+Engineering Confidence
+Engineering Traceability
+Engineering Explainability
+6. Architectural Layers
+Layer 1 — Reality Layer
+Responsibility
+
+Represents the external engineering environment from which observations originate.
+
+Primary Concept
+Engineering Reality (ACC-004)
+Outputs
+Engineering Observations
+Layer 2 — Observation & Evidence Layer
+Responsibility
+
+Acquire, validate, and structure engineering information.
+
+Primary Concepts
+Engineering Observation (ACC-005)
+Engineering Evidence (ACC-006)
+Outputs
+Validated Engineering Evidence
+Layer 3 — Cognition Layer
+Responsibility
+
+Transform validated evidence into engineering cognition.
+
+Primary Concepts
+Engineering Understanding (ACC-007)
+Engineering Memory (ACC-008)
+Engineering Knowledge (ACC-009)
+Outputs
+Engineering Understanding
+Engineering Knowledge
+Layer 4 — Reasoning Layer
+Responsibility
+
+Analyze engineering understanding and knowledge to derive justified conclusions.
+
+Primary Concept
+Engineering Reasoning (ACC-010)
+Outputs
+Engineering Conclusions
+Layer 5 — Capability Layer
+Responsibility
+
+Execute reusable engineering cognitive functions.
+
+Primary Concept
+Engineering Capability (ACC-011)
+Outputs
+Recommendations
+Analyses
+Assessments
+Predictions
+Optimizations
+Layer 6 — Decision Support Layer
+Responsibility
+
+Present explainable engineering outputs to support human decision-making.
+
+Primary Concept
+Decision Support (ACC-012)
+Outputs
+Decision recommendations
+Supporting rationale
+Confidence assessments
+Alternative options
+7. Cross-Cutting Governance
+
+The following concepts apply across all architectural layers:
+
+Concept	Responsibility
+Engineering Context	Defines operating conditions
+Engineering Intent	Defines objectives
+Engineering Constraints	Defines permissible boundaries
+Engineering Confidence	Qualifies certainty
+Engineering Traceability	Maintains provenance
+Engineering Explainability	Provides justification
+
+These concepts SHALL be available to every layer and SHALL NOT be confined to a single architectural component.
+
+8. High-Level Information Flow
+
+The canonical information flow is:
+
+Engineering Reality
+        │
+Engineering Observation
+        │
+Engineering Evidence
+        │
+Engineering Understanding
+        │
+Engineering Memory
+        │
+Engineering Knowledge
+        │
+Engineering Reasoning
+        │
+Engineering Capability
+        │
+Decision Support
+
+Each stage transforms or enriches information while preserving traceability to preceding stages.
+
+9. Architectural Boundaries
+
+The Atlas architecture distinguishes between:
+
+External Environment: engineering reality, users, external systems, sensors, data sources.
+Atlas Core: cognitive processing governed by ACC and AHS.
+Integration Interfaces: APIs, connectors, import/export services, and messaging mechanisms.
+
+This separation ensures that external changes do not alter the canonical cognitive architecture.
+
+10. Conformance
+
+An implementation conforms to this specification if it:
+
+Preserves the canonical layer structure.
+Implements responsibilities consistent with ACC.
+Maintains defined information flow.
+Supports the required cross-cutting governance concepts.
+Does not introduce architectural shortcuts that violate layer responsibilities.
+11. Future Evolution
+
+Future revisions MAY introduce:
+
+Additional specialized layers.
+Distributed execution models.
+Multi-agent coordination architectures.
+Domain-specific cognitive extensions.
+
+Such additions SHALL preserve the canonical layer responsibilities defined by this specification.

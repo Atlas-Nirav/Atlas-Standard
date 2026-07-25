@@ -1,0 +1,252 @@
+AHS-012 — Cognitive State Model
+
+Document ID: AHS-012
+Title: Cognitive State Model
+Version: 1.0.0-draft
+Status: Draft
+
+Architectural Views: Process, Information
+
+1. Purpose
+
+This specification defines the canonical cognitive state model of the Atlas Engineering Cognition Framework (AECF).
+
+The Cognitive State Model establishes the lifecycle and state transitions of engineering cognitive artifacts as they evolve from initial observation to validated decision support.
+
+It enables deterministic cognition, lifecycle management, auditability, and explainability.
+
+2. Scope
+
+This specification defines:
+
+Cognitive states
+State transitions
+Transition rules
+State invariants
+State validation
+State history
+
+This specification applies to all canonical engineering artifacts defined by ACC.
+
+3. Canonical Definition
+
+A Cognitive State is the current maturity and validation status of an engineering cognitive artifact during its lifecycle within Atlas.
+
+A state describes what the artifact currently is, not what process is executing.
+
+4. Objectives
+
+The Cognitive State Model SHALL:
+
+Standardize artifact maturity.
+Prevent invalid state transitions.
+Preserve cognitive integrity.
+Support traceability.
+Support explainability.
+Enable lifecycle auditing.
+5. Canonical Cognitive Lifecycle
+
+Every engineering artifact SHALL progress through the following lifecycle.
+
+Created
+    │
+Observed
+    │
+Validated
+    │
+Understood
+    │
+Preserved
+    │
+Generalized
+    │
+Reasoned
+    │
+Applied
+    │
+Communicated
+    │
+Archived
+
+Not every artifact must reach every state, but transitions SHALL follow the defined ordering unless explicitly permitted.
+
+6. State Definitions
+Created
+
+The artifact has been instantiated but has not yet participated in engineering cognition.
+
+Observed
+
+The artifact represents an engineering observation awaiting validation.
+
+Validated
+
+The artifact has been verified and accepted as Engineering Evidence.
+
+Understood
+
+Engineering meaning has been established.
+
+Preserved
+
+The understanding has been stored as Engineering Memory.
+
+Generalized
+
+Reusable Engineering Knowledge has been derived.
+
+Reasoned
+
+Engineering conclusions have been produced.
+
+Applied
+
+Engineering capabilities have acted upon the conclusions.
+
+Communicated
+
+Decision Support has presented the outcome.
+
+Archived
+
+The artifact is retained for historical reference but no longer participates in active cognition.
+
+7. State Transition Rules
+
+Permitted transitions:
+
+Created
+   │
+Observed
+   │
+Validated
+   │
+Understood
+   │
+Preserved
+   │
+Generalized
+   │
+Reasoned
+   │
+Applied
+   │
+Communicated
+   │
+Archived
+
+Backward transitions SHALL NOT occur except through explicit refinement workflows.
+
+8. Refinement
+
+Engineering cognition is iterative.
+
+Artifacts MAY return to an earlier maturity stage through a controlled refinement process.
+
+Example:
+
+Reasoned
+     │
+New Evidence
+     │
+     ▼
+Validated
+     │
+Understood
+     │
+Reasoned
+
+The original artifact SHALL remain traceable.
+
+The refinement SHALL create a new artifact version.
+
+9. State Invariants
+
+Every cognitive state SHALL preserve:
+
+Artifact identity
+Context
+Intent
+Constraints
+Provenance
+Traceability
+Version history
+
+These attributes SHALL remain available throughout the artifact lifecycle.
+
+10. State Metadata
+
+Every state SHALL record:
+
+State identifier
+Entered timestamp
+Entered by
+Exit timestamp
+Previous state
+Transition reason
+Validation status
+Confidence
+Version
+11. State Validation
+
+A transition SHALL occur only if:
+
+Preconditions are satisfied.
+Required artifacts exist.
+Mandatory metadata is present.
+Constraints are satisfied.
+Confidence requirements are met where applicable.
+
+Invalid transitions SHALL be rejected.
+
+12. State History
+
+Atlas SHALL maintain the complete history of state transitions.
+
+Example:
+
+Observation #124
+
+Created
+
+↓
+
+Observed
+
+↓
+
+Validated
+
+↓
+
+Understood
+
+↓
+
+Preserved
+
+↓
+
+Generalized
+
+State history SHALL be immutable.
+
+13. Conformance
+
+An implementation conforms if it:
+
+Implements the canonical state model.
+Prevents invalid transitions.
+Preserves state history.
+Maintains artifact identity.
+Supports refinement without losing provenance.
+14. Future Evolution
+
+Future revisions MAY introduce:
+
+Domain-specific cognitive states.
+Specialized validation states.
+Multi-agent cognitive synchronization states.
+Collaborative cognition states.
+
+Such extensions SHALL remain compatible with the canonical lifecycle.

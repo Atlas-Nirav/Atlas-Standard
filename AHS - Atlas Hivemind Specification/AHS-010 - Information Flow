@@ -1,0 +1,221 @@
+AHS-010 — Information Flow
+
+Document ID: AHS-010
+Title: Information Flow
+Version: 1.0.0-draft
+Status: Draft
+
+Architectural Views: Information, Process
+
+1. Purpose
+
+This specification defines the canonical information flow of the Atlas Engineering Cognition Framework (AECF).
+
+It specifies how engineering information is acquired, transformed, enriched, preserved, and communicated throughout the Atlas architecture while maintaining semantic integrity, traceability, and explainability.
+
+2. Scope
+
+This specification defines:
+
+Information artifacts
+Information transformations
+Information ownership
+Information propagation
+Information integrity
+Information lifecycle
+
+It does not define storage technologies, serialization formats, or communication protocols.
+
+3. Canonical Definition
+
+Information Flow is the governed movement and transformation of engineering information through the Atlas cognitive architecture while preserving its meaning, provenance, context, and integrity.
+
+4. Information Principles
+
+Atlas information SHALL:
+
+Preserve semantic meaning.
+Preserve traceability.
+Preserve engineering context.
+Preserve engineering intent.
+Preserve applicable constraints.
+Never lose provenance.
+Never be modified without recording the transformation.
+5. Canonical Information Artifacts
+
+Atlas recognizes the following primary engineering artifacts.
+
+Artifact	Produced By	Consumed By
+Engineering Observation	Observation	Evidence
+Engineering Evidence	Evidence	Understanding
+Engineering Understanding	Understanding	Memory, Reasoning
+Engineering Memory	Memory	Knowledge
+Engineering Knowledge	Knowledge	Reasoning
+Engineering Conclusions	Reasoning	Capability
+Engineering Recommendations	Capability	Decision Support
+Decision Support Artifact	Decision Support	Human / External System
+
+These artifacts constitute the canonical information flow through Atlas.
+
+6. Information Transformation
+
+Each cognitive stage transforms information into a higher-value engineering artifact.
+
+Reality
+    │
+Observation
+    │
+Engineering Observation
+    │
+Evidence Validation
+    │
+Engineering Evidence
+    │
+Understanding
+    │
+Engineering Understanding
+    │
+Memory
+    │
+Engineering Memory
+    │
+Knowledge
+    │
+Engineering Knowledge
+    │
+Reasoning
+    │
+Engineering Conclusions
+    │
+Capability
+    │
+Engineering Recommendations
+    │
+Decision Support
+
+No stage SHALL alter the semantic meaning of artifacts produced by previous stages without preserving the original artifact and recording the transformation.
+
+7. Information Ownership
+
+Each engineering artifact SHALL have a single authoritative owner.
+
+Artifact	Owner
+Observation	Observation Service
+Evidence	Evidence Service
+Understanding	Understanding Service
+Memory	Memory Service
+Knowledge	Knowledge Service
+Conclusions	Reasoning Service
+Recommendations	Capability Service
+Decision Support Artifact	Decision Support Service
+
+Ownership defines responsibility for creation, validation, lifecycle management, and integrity.
+
+8. Information Metadata
+
+Every engineering artifact SHALL include the following metadata.
+
+Identity
+
+Globally unique identifier.
+
+Source
+
+Origin of the artifact.
+
+Timestamp
+
+Creation and modification timestamps.
+
+Context
+
+Engineering context applicable to the artifact.
+
+Intent
+
+Engineering objective associated with the artifact.
+
+Constraints
+
+Applicable engineering constraints.
+
+Confidence
+
+Current confidence assessment.
+
+Traceability
+
+Links to predecessor artifacts.
+
+Explainability
+
+References supporting engineering justification.
+
+Version
+
+Artifact version identifier.
+
+9. Information Integrity
+
+Atlas SHALL ensure:
+
+No information corruption.
+No silent modification.
+Complete provenance.
+Consistent semantic interpretation.
+Deterministic transformations.
+Versioned updates.
+
+Integrity SHALL be verifiable throughout the information lifecycle.
+
+10. Information Lifecycle
+Created
+    │
+Validated
+    │
+Consumed
+    │
+Enriched
+    │
+Preserved
+    │
+Referenced
+    │
+Archived
+    │
+Retired
+
+Every transition SHALL be traceable.
+
+11. Information Exchange Rules
+
+Information exchanged between services SHALL:
+
+Use canonical engineering artifacts.
+Preserve metadata.
+Preserve traceability.
+Preserve engineering semantics.
+Preserve version compatibility.
+
+Services SHALL reject artifacts that violate canonical integrity requirements.
+
+12. Conformance
+
+An implementation conforms if it:
+
+Uses canonical engineering artifacts.
+Preserves required metadata.
+Maintains semantic integrity.
+Maintains end-to-end traceability.
+Documents all information transformations.
+13. Future Evolution
+
+Future revisions MAY introduce:
+
+Additional artifact types.
+Domain-specific engineering artifacts.
+Semantic compression techniques.
+Federated information models.
+Digital twin information mappings.
+
+Such additions SHALL remain consistent with the canonical information model.
