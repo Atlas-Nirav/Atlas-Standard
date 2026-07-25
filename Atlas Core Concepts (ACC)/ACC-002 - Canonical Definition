@@ -1,0 +1,117 @@
+ACC-002 — Canonical Definitions
+
+Document ID: ACC-002
+Title: Definitions
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification establishes the rules governing the definition and use of concepts within the Atlas Engineering Cognition Framework (AECF).
+
+Its purpose is to ensure that every concept has a single, canonical meaning that remains consistent across all Atlas specifications, implementations, and future revisions.
+
+2. Scope
+
+This specification applies to all concepts defined within the Atlas Core Concepts (ACC) and to every specification that references them, including but not limited to:
+
+Atlas Hivemind Specification (AHS)
+Engineering Understanding Specification (EUS)
+Engineering Memory Specification (EMS)
+Engineering Knowledge Specification (EKS)
+Engineering Evidence Specification (EES)
+Engineering Reasoning Specification (ERS)
+Engineering Capability Specification (ECS)
+Decision Support Specification (DSS)
+3. Canonical Definition
+
+A canonical definition is the single authoritative description of a concept within the Atlas Engineering Cognition Framework.
+
+Each concept SHALL have exactly one canonical definition.
+
+No specification SHALL redefine a concept in a way that changes its canonical meaning.
+
+4. Definition Principles
+
+All definitions SHALL conform to the following principles.
+
+4.1 Uniqueness
+
+Each concept SHALL have one and only one canonical definition.
+
+4.2 Clarity
+
+Definitions SHALL be precise, unambiguous, and understandable without relying on implementation-specific terminology.
+
+4.3 Consistency
+
+A concept SHALL retain the same meaning throughout every Atlas specification.
+
+4.4 Technology Independence
+
+Definitions SHALL not depend upon any specific software, programming language, database, artificial intelligence model, hardware platform, or implementation technology.
+
+4.5 Domain Independence
+
+Definitions SHALL remain applicable across engineering disciplines unless explicitly stated otherwise.
+
+4.6 Extensibility
+
+New concepts MAY be introduced without modifying the canonical meaning of previously defined concepts.
+
+4.7 Traceability
+
+Every defined concept SHALL explicitly identify its relationships to other Atlas concepts where applicable.
+
+5. Definition Structure
+
+Every core concept defined by the Atlas Core Concepts SHALL follow the same structure.
+
+Each concept specification SHALL contain the following sections:
+
+Definition
+Purpose
+Characteristics
+Relationships
+Responsibilities
+Normative Statements
+Non-Goals
+
+This standardized structure ensures consistency and simplifies cross-referencing throughout the Atlas specification suite.
+
+6. Normative Requirements
+
+The following requirements apply to all Atlas specifications.
+
+Every core concept SHALL be defined only within the Atlas Core Concepts (ACC).
+Other specifications SHALL reference canonical definitions instead of redefining them.
+Changes to canonical definitions SHALL be managed through formal version control and specification revision.
+Definitions SHALL remain implementation-independent.
+Definitions SHALL remain internally consistent with all related concepts.
+7. Conformance
+
+A specification conforms to ACC-002 if it:
+
+References canonical Atlas definitions.
+Does not redefine established concepts.
+Uses terminology consistently.
+Preserves the intended meaning of referenced concepts.
+8. Non-Goals
+
+This specification does not:
+
+Define engineering processes.
+Define software architecture.
+Define implementation details.
+Define algorithms or data structures.
+Replace domain-specific engineering standards.
+9. Future Evolution
+
+The Atlas Core Concepts are expected to evolve as the framework matures.
+
+Future revisions MAY introduce new concepts or refine existing definitions, provided that:
+
+Backward compatibility is preserved where practical.
+Canonical meanings remain stable.
+Changes are documented through formal specification versioning.
+Dependent specifications remain traceable to the revised definitions.

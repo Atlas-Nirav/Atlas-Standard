@@ -1,0 +1,116 @@
+ACC-004 — Engineering Reality
+
+Document ID: ACC-004
+Title: Engineering Domain Reality
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Engineering Domain Reality, the foundational concept of the Atlas Engineering Cognition Framework (AECF).
+
+Engineering Domain Reality represents the objective engineering environment that exists independently of Atlas. It is the source from which observations are made, evidence is derived, understanding is constructed, and engineering decisions are supported.
+
+2. Scope
+
+This specification applies to all engineering domains represented within Atlas, including but not limited to:
+
+Civil Engineering
+Structural Engineering
+Mechanical Engineering
+Electrical Engineering
+Software Engineering
+Manufacturing Engineering
+Aerospace Engineering
+Industrial Engineering
+Any future engineering discipline supported by Atlas
+3. Canonical Definition
+
+Engineering Domain Reality is the objective state of an engineering domain, consisting of physical systems, digital systems, processes, environments, behaviors, and conditions that exist independently of Atlas and may be observed, measured, modeled, or analyzed.
+
+Engineering Domain Reality is not created by Atlas.
+
+Atlas observes and models it.
+
+4. Characteristics
+
+Engineering Domain Reality SHALL possess the following characteristics.
+
+4.1 Objective
+
+Engineering Domain Reality exists independently of Atlas, its users, and its implementations.
+
+4.2 Observable
+
+Elements of Engineering Domain Reality SHALL be capable of being observed directly or indirectly.
+
+4.3 Measurable
+
+Where applicable, Engineering Domain Reality SHALL support quantitative or qualitative measurement.
+
+4.4 Dynamic
+
+Engineering Domain Reality MAY change over time due to natural processes, engineering activities, operational conditions, or external influences.
+
+4.5 Independent
+
+Engineering Domain Reality SHALL remain independent of Atlas interpretations, models, and conclusions.
+
+5. Relationships
+
+Engineering Domain Reality is the origin of the Atlas cognitive lifecycle.
+
+Engineering Domain Reality
+            │
+            ▼
+Engineering Observation
+            ▼
+Engineering Evidence
+            ▼
+Engineering Understanding
+            ▼
+Engineering Reasoning
+            ▼
+Decision Support
+            ▼
+Engineering Memory
+            ▼
+Engineering Knowledge
+
+Engineering Domain Reality:
+
+Produces observable phenomena.
+Does not depend on Atlas.
+Is represented—but never replaced—by Engineering Understanding.
+6. Responsibilities
+
+Engineering Domain Reality serves as:
+
+The source of engineering observations.
+The reference against which engineering understanding is evaluated.
+The basis for engineering evidence.
+The foundation of all engineering cognition within Atlas.
+7. Normative Requirements
+
+Engineering Domain Reality SHALL:
+
+Exist independently of Atlas.
+Be represented rather than modified by Atlas.
+Be the origin of all engineering observations.
+Serve as the ultimate reference for validating engineering understanding.
+
+Atlas SHALL NOT assume that its internal representations are identical to Engineering Domain Reality.
+
+8. Non-Goals
+
+Engineering Domain Reality does not:
+
+Represent Atlas knowledge.
+Represent engineering memory.
+Represent engineering reasoning.
+Represent engineering documentation.
+Represent software implementations.
+Represent internal Atlas models.
+9. Future Evolution
+
+Future Atlas specifications MAY extend the representation of Engineering Domain Reality to support new engineering disciplines, provided that the canonical definition established by this specification remains unchanged.

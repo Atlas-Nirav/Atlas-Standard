@@ -1,0 +1,129 @@
+ACC-006 — Engineering Evidence
+
+Document ID: ACC-006
+Title: Engineering Evidence
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Engineering Evidence, the validated information upon which Engineering Understanding is constructed.
+
+Engineering Evidence transforms Engineering Observations into trustworthy inputs for engineering cognition through validation, qualification, and contextual evaluation.
+
+2. Scope
+
+This specification applies to all information used to support engineering conclusions within the Atlas Engineering Cognition Framework.
+
+Engineering Evidence may originate from, but is not limited to:
+
+Engineering observations
+Measurements
+Sensor data
+Engineering drawings
+BIM/CAD models
+Engineering calculations
+Simulations
+Laboratory tests
+Inspection reports
+Photographs and videos
+Standards and regulations
+Engineering documentation
+Expert assessments
+3. Canonical Definition
+
+Engineering Evidence is validated and contextually relevant information that supports, contradicts, or qualifies Engineering Understanding.
+
+Engineering Evidence is not merely collected information.
+
+It is information that has been evaluated for relevance, reliability, integrity, and applicability.
+
+4. Characteristics
+
+Engineering Evidence SHALL possess the following characteristics.
+
+4.1 Observation-Derived
+
+Engineering Evidence SHALL originate from one or more Engineering Observations.
+
+4.2 Validated
+
+Engineering Evidence SHALL undergo evaluation appropriate to its intended engineering use.
+
+4.3 Relevant
+
+Engineering Evidence SHALL be applicable to the engineering context in which it is used.
+
+4.4 Traceable
+
+Engineering Evidence SHALL maintain traceability to its originating observations and sources.
+
+4.5 Explainable
+
+Engineering Evidence SHALL support transparent engineering reasoning.
+
+4.6 Contextual
+
+Engineering Evidence SHALL be interpreted within its engineering context.
+
+4.7 Evolvable
+
+Engineering Evidence MAY be strengthened, weakened, superseded, or invalidated as new observations become available.
+
+5. Relationships
+
+Engineering Evidence occupies the central position in the Atlas cognitive pipeline.
+
+Engineering Reality
+        │
+        ▼
+Engineering Observation
+        │
+        ▼
+Engineering Evidence
+        │
+        ▼
+Engineering Understanding
+
+Engineering Evidence:
+
+Is derived from Engineering Observations.
+Supports Engineering Understanding.
+Is consumed by Engineering Reasoning.
+May be preserved by Engineering Memory.
+May contribute to Engineering Knowledge through repeated validation.
+6. Responsibilities
+
+Engineering Evidence is responsible for:
+
+Supporting engineering understanding.
+Justifying engineering reasoning.
+Enabling explainable decision-making.
+Maintaining traceability.
+Recording supporting and contradicting information.
+Preserving engineering confidence.
+7. Normative Requirements
+
+Engineering Evidence SHALL:
+
+Be derived from Engineering Observations.
+Maintain traceability to its source.
+Preserve contextual information.
+Support explainable engineering reasoning.
+Be available for independent review.
+
+Atlas SHALL NOT construct Engineering Understanding from information that has not been evaluated as Engineering Evidence.
+
+8. Non-Goals
+
+Engineering Evidence does not:
+
+Represent Engineering Understanding.
+Perform engineering reasoning.
+Produce engineering decisions.
+Replace engineering judgment.
+Represent engineering memory.
+Represent engineering knowledge.
+9. Future Evolution
+
+Future revisions MAY define evidence quality models, confidence metrics, provenance models, and evidence classification mechanisms without changing the canonical definition established by this specification.
