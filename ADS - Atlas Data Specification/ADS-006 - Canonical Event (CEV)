@@ -1,0 +1,266 @@
+ADS-006 — Canonical Event (CEV)
+
+Document ID: ADS-006
+Title: Canonical Event (CEV)
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Canonical Event (CEV), the standardized representation of immutable engineering events within the Atlas Engineering Cognition Framework (AECF).
+
+Canonical Events communicate significant changes in engineering state while preserving semantics, provenance, governance, and traceability.
+
+2. Scope
+
+This specification defines:
+
+Event model
+Event hierarchy
+Event metadata
+Event relationships
+Event lifecycle
+Event governance
+Event quality
+Event interoperability
+
+This specification applies to all engineering events within Atlas.
+
+3. Canonical Definition
+
+A Canonical Event (CEV) is a specialization of the Canonical Atlas Object representing an immutable occurrence that records a significant engineering fact or state transition.
+
+A Canonical Event announces that something happened.
+
+It SHALL NOT request, instruct, or mandate future actions.
+
+4. Objectives
+
+The Canonical Event SHALL:
+
+Represent immutable engineering facts.
+Notify interested participants.
+Preserve event history.
+Enable event-driven cognition.
+Support traceability.
+Support replay.
+Support interoperability.
+5. Inheritance
+
+The Canonical Event SHALL inherit every mandatory property of the Canonical Atlas Object.
+
+Canonical Atlas Object
+        │
+        ▼
+ Canonical Event
+        │
+ ┌──────┼──────────────┐
+ ▼      ▼              ▼
+Observation   Workflow   Decision
+Event         Event      Event
+
+Future event families SHALL extend this hierarchy.
+
+6. Canonical Event Types
+
+Atlas defines the following event families.
+
+Event Family	Description
+Observation Event	New engineering observation
+Evidence Event	Evidence validated
+Knowledge Event	Knowledge updated
+Decision Event	Decision created or changed
+Workflow Event	Workflow transition
+Governance Event	Policy or governance change
+Trust Event	Security or trust change
+Integration Event	External system interaction
+Platform Event	Platform operational state
+7. Mandatory Event Properties
+
+Every Canonical Event SHALL define:
+
+Property	Description
+Event ID	Globally unique identifier
+Event Type	Canonical event classification
+Event Name	Human-readable name
+Event Timestamp	Time the event occurred
+Producer	Producing component
+Subject	Entity affected
+Payload	Canonical event content
+Context	Engineering context
+Correlation ID	Related activity identifier
+Causation ID	Originating event identifier
+
+These properties supplement the inherited CAO properties.
+
+8. Event Immutability
+
+After publication, a Canonical Event SHALL NOT be modified.
+
+If corrections are required, a new event SHALL be published referencing the original event.
+
+Historical events SHALL remain permanently available according to retention policies.
+
+9. Event Relationships
+
+Canonical Events SHALL support explicit relationships.
+
+Observation Event
+        │
+causes
+        ▼
+Evidence Event
+        │
+triggers
+        ▼
+Knowledge Event
+        │
+contributesTo
+        ▼
+Decision Event
+        │
+initiates
+        ▼
+Workflow Event
+
+Additional relationships MAY be introduced through future specifications.
+
+10. Event Ordering
+
+Atlas supports three ordering models.
+
+Strict Ordering
+
+Events processed sequentially.
+
+Partition Ordering
+
+Ordering preserved within a partition.
+
+Unordered Processing
+
+Ordering not guaranteed.
+
+The applicable ordering model SHALL be declared by the producing service.
+
+11. Event Lifecycle
+
+A Canonical Event SHALL progress through the following lifecycle.
+
+Detected
+     │
+Validated
+     │
+Published
+     │
+Distributed
+     │
+Consumed
+     │
+Archived
+
+Lifecycle transitions SHALL be auditable.
+
+12. Provenance
+
+Every Canonical Event SHALL preserve:
+
+Producing service
+Producing workflow
+Source object
+Triggering event
+Processing context
+Engineering context
+Correlation identifiers
+
+Provenance SHALL be immutable.
+
+13. Replay Model
+
+Atlas SHALL support replay of Canonical Events.
+
+Replay SHALL:
+
+Preserve original timestamps.
+Preserve original identifiers.
+Preserve ordering semantics.
+Preserve provenance.
+
+Replay SHALL NOT modify historical events.
+
+14. Quality Requirements
+
+Every Canonical Event SHALL satisfy:
+
+Accuracy
+Completeness
+Integrity
+Traceability
+Immutability
+Replayability
+Interoperability
+Provenance integrity
+15. Governance
+
+Every Canonical Event SHALL define:
+
+Owner
+Publisher
+Retention policy
+Security classification
+Access policy
+Replay policy
+Audit requirements
+
+Governance SHALL accompany the event throughout its lifecycle.
+
+16. Conformance
+
+A Canonical Event conforms if it:
+
+Inherits the CAO contract.
+Implements mandatory event properties.
+Preserves immutability.
+Supports replay.
+Maintains provenance.
+Supports event ordering.
+Maintains governance metadata.
+17. Future Evolution
+
+Future revisions MAY introduce:
+
+Distributed event federation.
+Cross-organizational event exchange.
+Semantic event routing.
+Event prioritization.
+Digital Twin event streams.
+AI-generated engineering events.
+
+Such extensions SHALL preserve canonical event semantics.
+
+Canonical Event Structure
+Canonical Event
+│
+├── CAO Properties
+│
+├── Event Identity
+│     ├── Event ID
+│     ├── Event Type
+│     ├── Event Name
+│
+├── Event Context
+│     ├── Subject
+│     ├── Producer
+│     ├── Timestamp
+│     ├── Payload
+│
+├── Correlation
+│     ├── Correlation ID
+│     ├── Causation ID
+│
+├── Governance
+│     ├── Security
+│     ├── Retention
+│     ├── Replay
+│
+└── Provenance

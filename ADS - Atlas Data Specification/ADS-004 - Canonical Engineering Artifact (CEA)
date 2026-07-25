@@ -1,0 +1,246 @@
+ADS-004 — Canonical Engineering Artifact (CEA)
+
+Document ID: ADS-004
+Title: Canonical Engineering Artifact (CEA)
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Canonical Engineering Artifact (CEA), the normative representation of engineering cognition within the Atlas Engineering Cognition Framework (AECF).
+
+Every engineering artifact produced, consumed, transformed, or communicated by Atlas SHALL be represented as a Canonical Engineering Artifact or one of its specializations.
+
+2. Scope
+
+This specification defines:
+
+Engineering artifact model
+Artifact hierarchy
+Artifact lifecycle
+Mandatory properties
+Engineering semantics
+Provenance
+Cognitive relationships
+Quality requirements
+
+This specification applies to all engineering cognition within Atlas.
+
+3. Canonical Definition
+
+A Canonical Engineering Artifact (CEA) is a specialization of the Canonical Atlas Object that represents an engineering fact, observation, understanding, knowledge, conclusion, or recommendation within the engineering cognition lifecycle.
+
+4. Objectives
+
+The CEA SHALL:
+
+Represent engineering cognition.
+Preserve engineering meaning.
+Preserve provenance.
+Support traceability.
+Support explainability.
+Support reasoning.
+Support decision making.
+5. Inheritance
+
+The Canonical Engineering Artifact SHALL inherit every mandatory property defined by the Canonical Atlas Object (CAO).
+
+In addition, the CEA introduces engineering-specific semantics.
+
+Canonical Atlas Object (CAO)
+        │
+        ▼
+Canonical Engineering Artifact (CEA)
+        │
+ ┌──────┼───────────────┐
+ ▼      ▼               ▼
+Observation      Evidence      Understanding
+                               │
+                               ▼
+                             Memory
+                               │
+                               ▼
+                            Knowledge
+                               │
+                               ▼
+                            Conclusion
+                               │
+                               ▼
+                         Recommendation
+6. Canonical Artifact Types
+
+Atlas defines seven canonical engineering artifact types.
+
+Artifact	Purpose
+Observation	Captured engineering reality
+Evidence	Validated engineering facts
+Understanding	Engineering interpretation
+Memory	Persisted engineering understanding
+Knowledge	Generalized engineering understanding
+Conclusion	Result of engineering reasoning
+Recommendation	Actionable engineering guidance
+
+Future artifact types SHALL extend this hierarchy.
+
+7. Engineering Properties
+
+Every CEA SHALL define the following engineering properties.
+
+Property	Description
+Artifact ID	Unique identifier
+Artifact Type	Canonical artifact classification
+Engineering Domain	Structural, Architectural, Civil, etc.
+Engineering Context	Applicable engineering context
+Engineering Intent	Engineering objective
+Engineering Constraints	Applicable constraints
+Confidence	Confidence assessment
+Assumptions	Explicit assumptions
+Evidence References	Supporting evidence
+Reasoning References	Supporting reasoning
+Decision References	Related decisions
+
+These properties supplement the inherited CAO properties.
+
+8. Cognitive Relationships
+
+Engineering artifacts SHALL support the following relationships.
+
+Observation
+      │
+validatedAs
+      ▼
+Evidence
+      │
+interpretedAs
+      ▼
+Understanding
+      │
+storedAs
+      ▼
+Memory
+      │
+generalizedAs
+      ▼
+Knowledge
+      │
+reasonedInto
+      ▼
+Conclusion
+      │
+recommendedAs
+      ▼
+Recommendation
+
+Additional relationship types MAY be introduced through future profiles.
+
+9. Artifact Lifecycle
+
+Every CEA SHALL progress through the following lifecycle.
+
+Created
+    │
+Observed
+    │
+Validated
+    │
+Interpreted
+    │
+Reasoned
+    │
+Approved
+    │
+Active
+    │
+Archived
+
+Lifecycle state SHALL remain independent of workflow execution state.
+
+10. Provenance
+
+Every CEA SHALL preserve:
+
+Source observations
+Input artifacts
+Processing history
+Cognitive operators applied
+Producing engine
+Producing workflow
+Producing decision
+
+Provenance SHALL be immutable.
+
+11. Explainability
+
+Every CEA SHALL maintain links to:
+
+Supporting evidence
+Engineering assumptions
+Applied constraints
+Reasoning chain
+Confidence assessment
+Alternative interpretations (where applicable)
+
+Explainability SHALL be machine-readable.
+
+12. Quality Requirements
+
+Every CEA SHALL satisfy:
+
+Engineering correctness
+Completeness
+Consistency
+Traceability
+Explainability
+Confidence
+Constraint compliance
+Provenance integrity
+
+Quality assessments SHALL be associated with the artifact.
+
+13. Conformance
+
+A Canonical Engineering Artifact conforms if it:
+
+Inherits the CAO contract.
+Implements engineering properties.
+Preserves provenance.
+Maintains cognitive relationships.
+Supports lifecycle management.
+Provides explainability references.
+14. Future Evolution
+
+Future revisions MAY introduce:
+
+Domain-specific artifact profiles.
+Simulation artifacts.
+Digital Twin artifacts.
+Regulatory artifacts.
+AI-generated engineering artifacts.
+
+Extensions SHALL preserve canonical engineering semantics.
+
+Canonical Engineering Artifact Structure
+Canonical Engineering Artifact
+│
+├── CAO Properties
+│     ├── Identity
+│     ├── Metadata
+│     ├── Governance
+│     ├── Lifecycle
+│     ├── Provenance
+│     └── Traceability
+│
+├── Engineering Semantics
+│     ├── Domain
+│     ├── Context
+│     ├── Intent
+│     ├── Constraints
+│     ├── Assumptions
+│
+├── Cognitive Properties
+│     ├── Confidence
+│     ├── Evidence
+│     ├── Reasoning
+│     ├── Decisions
+│
+└── Extension Properties

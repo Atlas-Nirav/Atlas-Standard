@@ -1,0 +1,248 @@
+ADS-005 — Decision Record (DR)
+
+Document ID: ADS-005
+Title: Decision Record (DR)
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Decision Record (DR), the canonical representation of an engineering decision within the Atlas Engineering Cognition Framework (AECF).
+
+Every engineering decision, recommendation approval, rejection, or revision SHALL be represented as a Decision Record.
+
+The Decision Record serves as the authoritative and auditable record of engineering decision-making.
+
+2. Scope
+
+This specification defines:
+
+Decision model
+Decision hierarchy
+Decision lifecycle
+Decision metadata
+Decision governance
+Decision traceability
+Decision quality
+Decision approval
+
+This specification applies to every engineering decision produced within Atlas.
+
+3. Canonical Definition
+
+A Decision Record (DR) is a specialization of the Canonical Atlas Object that captures an engineering decision, its justification, supporting evidence, approvals, alternatives, and lifecycle in a governed and traceable form.
+
+4. Objectives
+
+The Decision Record SHALL:
+
+Record engineering decisions.
+Preserve engineering rationale.
+Preserve evidence.
+Preserve approvals.
+Preserve traceability.
+Support auditing.
+Support revision history.
+5. Inheritance
+
+Decision Record inherits every mandatory property from the Canonical Atlas Object.
+
+Canonical Atlas Object
+        │
+        ▼
+ Decision Record
+        │
+ ┌──────┼────────────┐
+ ▼      ▼            ▼
+Recommendation  Approval  Revision
+6. Decision Types
+
+Atlas defines the following canonical decision types.
+
+Decision Type	Description
+Recommendation	Proposed engineering action
+Approval	Accepted recommendation
+Rejection	Declined recommendation
+Override	Human decision replacing system recommendation
+Revision	Updated engineering decision
+Exception	Approved deviation from policy or constraints
+
+Future decision types SHALL extend this hierarchy.
+
+7. Mandatory Decision Properties
+
+Every Decision Record SHALL define:
+
+Property	Description
+Decision ID	Globally unique identifier
+Decision Type	Canonical classification
+Decision Statement	Formal engineering decision
+Engineering Objective	Objective addressed
+Decision Status	Proposed, Approved, Rejected, Superseded
+Decision Authority	Human, Atlas, or Hybrid
+Decision Timestamp	Time of decision
+Effective Date	Date decision becomes effective
+Expiration Date	Optional end of validity
+8. Supporting Information
+
+Every Decision Record SHALL reference:
+
+Engineering Evidence
+Engineering Understanding
+Engineering Knowledge
+Engineering Conclusions
+Applicable Constraints
+Applicable Policies
+Confidence Assessment
+Engineering Context
+
+These references SHALL remain immutable.
+
+9. Alternatives
+
+Decision Records SHALL document evaluated alternatives where applicable.
+
+Each alternative SHALL include:
+
+Alternative identifier
+Description
+Advantages
+Disadvantages
+Evaluation summary
+Reason for acceptance or rejection
+
+Rejected alternatives SHALL remain part of the decision history.
+
+10. Approval Model
+
+Every Decision Record SHALL define its approval status.
+
+Supported approval states include:
+
+Draft
+   │
+Review
+   │
+Approved
+   │
+Implemented
+   │
+Superseded
+   │
+Archived
+
+Approval authority SHALL be recorded.
+
+11. Decision Provenance
+
+Every Decision Record SHALL preserve:
+
+Requesting workflow
+Producing reasoning process
+Supporting engineering artifacts
+Decision authority
+Human participants
+Automated participants
+Decision history
+
+Decision provenance SHALL be immutable.
+
+12. Decision Explainability
+
+Every Decision Record SHALL include:
+
+Engineering rationale
+Supporting evidence
+Assumptions
+Constraints
+Confidence
+Alternative analysis
+Policy references
+
+Explainability SHALL be complete enough to reconstruct why the decision was made.
+
+13. Decision Quality
+
+Every Decision Record SHALL be evaluated for:
+
+Correctness
+Completeness
+Consistency
+Explainability
+Traceability
+Confidence
+Policy compliance
+Engineering validity
+
+Quality assessments SHALL be versioned.
+
+14. Revision Model
+
+Engineering decisions MAY be revised.
+
+A revised Decision Record SHALL:
+
+Reference the superseded decision.
+Preserve the original record.
+Record revision reason.
+Record revision authority.
+Maintain complete traceability.
+
+No Decision Record SHALL be modified in place.
+
+15. Conformance
+
+A Decision Record conforms if it:
+
+Inherits the CAO contract.
+Implements mandatory decision properties.
+Preserves decision provenance.
+Records approvals.
+Documents alternatives.
+Supports revision history.
+16. Future Evolution
+
+Future revisions MAY introduce:
+
+Collaborative decision records.
+Multi-organization approvals.
+Regulatory review workflows.
+AI-assisted decision explanations.
+Digital signature integration.
+
+Extensions SHALL preserve canonical decision semantics.
+
+Canonical Decision Record Structure
+Decision Record
+│
+├── CAO Properties
+│
+├── Decision Identity
+│     ├── Decision ID
+│     ├── Type
+│     ├── Status
+│     └── Authority
+│
+├── Decision Content
+│     ├── Statement
+│     ├── Objectives
+│     ├── Context
+│     ├── Constraints
+│
+├── Supporting Cognition
+│     ├── Evidence
+│     ├── Understanding
+│     ├── Knowledge
+│     ├── Conclusions
+│
+├── Evaluation
+│     ├── Alternatives
+│     ├── Confidence
+│     ├── Risks
+│
+├── Governance
+│     ├── Approval
+│     ├── Policy
+│     ├── Audit
+│
+└── Revision History

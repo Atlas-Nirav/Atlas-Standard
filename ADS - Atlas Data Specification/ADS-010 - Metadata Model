@@ -1,0 +1,297 @@
+ADS-010 — Metadata Model
+
+Document ID: ADS-010
+Title: Metadata Model
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Canonical Metadata Model (CMM) for the Atlas Engineering Cognition Framework (AECF).
+
+The Canonical Metadata Model provides a standardized structure for describing, governing, discovering, securing, and tracing all Canonical Atlas Objects (CAOs).
+
+Every CAO SHALL include metadata conforming to this specification.
+
+2. Scope
+
+This specification defines:
+
+Metadata categories
+Mandatory metadata
+Optional metadata
+Metadata inheritance
+Metadata governance
+Metadata quality
+Metadata lifecycle
+
+This specification applies to all Canonical Atlas Objects.
+
+3. Canonical Definition
+
+Metadata is structured information that describes, governs, identifies, classifies, manages, and traces a Canonical Atlas Object without altering its semantic content.
+
+Metadata describes the object.
+
+It is not the object itself.
+
+4. Objectives
+
+The Metadata Model SHALL:
+
+Standardize object descriptions.
+Enable discovery.
+Enable governance.
+Enable interoperability.
+Support traceability.
+Support lifecycle management.
+Preserve provenance.
+Enable automated processing.
+5. Metadata Categories
+
+Atlas defines seven canonical metadata categories.
+
+Category	Purpose
+Identity Metadata	Identifies the object
+Descriptive Metadata	Describes the object
+Governance Metadata	Defines ownership and policies
+Lifecycle Metadata	Tracks operational state
+Technical Metadata	Supports processing and interoperability
+Provenance Metadata	Records origin and history
+Discovery Metadata	Enables search and classification
+
+All categories SHALL inherit from the Canonical Atlas Object.
+
+6. Identity Metadata
+
+Every CAO SHALL include:
+
+Property	Description
+Object ID	Globally unique identifier
+Object Type	Canonical type
+Namespace	Owning namespace
+Version	Object version
+Schema Version	Governing schema version
+
+Identity metadata SHALL remain immutable except for version progression.
+
+7. Descriptive Metadata
+
+Every CAO SHALL define:
+
+Title
+Name
+Description
+Summary
+Domain
+Discipline
+Keywords
+Tags
+Language
+Documentation References
+
+Descriptive metadata SHALL support both human and machine interpretation.
+
+8. Governance Metadata
+
+Every CAO SHALL include:
+
+Owner
+Steward
+Custodian
+Approval Authority
+Security Classification
+Access Policy
+Retention Policy
+Compliance Profile
+Audit Policy
+
+Governance metadata SHALL remain associated with the object throughout its lifecycle.
+
+9. Lifecycle Metadata
+
+Every CAO SHALL define:
+
+Lifecycle State
+Status
+Created Timestamp
+Modified Timestamp
+Published Timestamp
+Archived Timestamp
+Retired Timestamp
+
+Lifecycle transitions SHALL be recorded.
+
+10. Technical Metadata
+
+Technical metadata SHALL include:
+
+Serialization Profile
+Encoding
+Checksum
+Digital Signature Reference
+Object Size
+Compatible Schema Versions
+Supported Profiles
+Processing Requirements
+
+Technical metadata SHALL remain independent of implementation technologies.
+
+11. Provenance Metadata
+
+Every CAO SHALL preserve:
+
+Origin
+Producer
+Source Objects
+Transformation History
+Processing Engine
+Responsible Workflow
+Decision References
+
+Provenance metadata SHALL be immutable.
+
+12. Discovery Metadata
+
+Discovery metadata SHALL support:
+
+Classification
+Taxonomy
+Ontology References
+Search Keywords
+Domain Index
+Geographic Scope (where applicable)
+Temporal Scope
+Related Objects
+
+Discovery metadata SHALL facilitate efficient retrieval and knowledge exploration.
+
+13. Metadata Inheritance
+
+Every specialized Atlas object SHALL inherit the Canonical Metadata Model.
+
+Canonical Atlas Object
+        │
+        ▼
+Canonical Metadata Model
+        │
+ ┌──────┼──────────────┐
+ ▼      ▼              ▼
+CEA     DR            CEV
+ │       │             │
+ ▼       ▼             ▼
+Inherited Metadata for All Objects
+
+Specializations MAY add metadata but SHALL NOT remove mandatory metadata.
+
+14. Metadata Lifecycle
+
+Metadata SHALL progress through the following lifecycle.
+
+Defined
+   │
+Validated
+   │
+Applied
+   │
+Maintained
+   │
+Versioned
+   │
+Archived
+
+Metadata history SHALL remain auditable.
+
+15. Metadata Quality Requirements
+
+Metadata SHALL satisfy:
+
+Completeness
+Correctness
+Consistency
+Accuracy
+Timeliness
+Traceability
+Interoperability
+Discoverability
+
+Quality SHALL be measurable.
+
+16. Metadata Governance
+
+Metadata SHALL be governed through:
+
+Validation rules
+Ownership
+Stewardship
+Change control
+Audit
+Retention
+Compliance verification
+
+Metadata governance SHALL be independent of payload content.
+
+17. Conformance
+
+A Canonical Atlas Object conforms to the Metadata Model if it:
+
+Implements all mandatory metadata.
+Preserves metadata integrity.
+Supports inheritance.
+Maintains provenance metadata.
+Supports lifecycle metadata.
+Implements governance metadata.
+18. Future Evolution
+
+Future revisions MAY introduce:
+
+Semantic ontology bindings.
+Knowledge graph metadata.
+AI-generated metadata enrichment.
+Automated classification.
+Domain-specific metadata profiles.
+Cross-enterprise metadata federation.
+
+Extensions SHALL preserve canonical metadata semantics.
+
+Canonical Metadata Structure
+Canonical Metadata
+│
+├── Identity
+│     ├── Object ID
+│     ├── Type
+│     ├── Namespace
+│     ├── Version
+│
+├── Description
+│     ├── Name
+│     ├── Title
+│     ├── Summary
+│     ├── Keywords
+│
+├── Governance
+│     ├── Owner
+│     ├── Steward
+│     ├── Policies
+│     ├── Classification
+│
+├── Lifecycle
+│     ├── Status
+│     ├── State
+│     ├── Timestamps
+│
+├── Technical
+│     ├── Encoding
+│     ├── Signature
+│     ├── Schema
+│
+├── Provenance
+│     ├── Origin
+│     ├── Producer
+│     ├── History
+│
+└── Discovery
+      ├── Taxonomy
+      ├── Ontology
+      ├── Search
+      └── Relationships

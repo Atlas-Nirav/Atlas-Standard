@@ -1,0 +1,271 @@
+ADS-012 — Identifier Model
+
+Document ID: ADS-012
+Title: Identifier Model
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Canonical Identifier Model (CIM) for the Atlas Engineering Cognition Framework (AECF).
+
+The Canonical Identifier Model establishes a standardized, globally unique, persistent, and technology-independent identification system for all Canonical Atlas Objects (CAOs), relationships, and governed entities.
+
+2. Scope
+
+This specification defines:
+
+Identifier architecture
+Identifier types
+Namespaces
+Identifier lifecycle
+Version identifiers
+Reference model
+Resolution model
+Governance
+
+This specification applies to every identifiable entity within Atlas.
+
+3. Canonical Definition
+
+A Canonical Identifier is a globally unique, immutable, and persistent identifier assigned to a Canonical Atlas Object or governed entity, enabling unambiguous reference, traceability, interoperability, and lifecycle continuity.
+
+Identifiers establish identity.
+
+They SHALL NOT encode business meaning.
+
+4. Objectives
+
+The Identifier Model SHALL:
+
+Ensure global uniqueness.
+Provide persistent identity.
+Support distributed environments.
+Enable stable references.
+Support versioning.
+Enable interoperability.
+Preserve traceability.
+Remain technology-independent.
+5. Identifier Principles
+
+Every Atlas identifier SHALL be:
+
+Globally unique
+Immutable
+Persistent
+Opaque
+Stable
+Resolvable
+Version-aware
+Independent of implementation
+
+Identifiers SHALL NOT change because object content changes.
+
+6. Identifier Categories
+
+Atlas defines the following canonical identifier categories.
+
+Identifier	Purpose
+Object Identifier	Identifies a CAO
+Relationship Identifier	Identifies a CRO
+Version Identifier	Identifies a specific revision
+Namespace Identifier	Identifies an organizational scope
+Workflow Identifier	Identifies a workflow
+Project Identifier	Identifies a project
+Session Identifier	Identifies a communication session
+Correlation Identifier	Links related activities
+Transaction Identifier	Tracks transactional boundaries
+
+Future categories SHALL extend this hierarchy.
+
+7. Canonical Identifier Structure
+
+Every identifier SHALL include the following conceptual components.
+
+Component	Description
+Namespace	Owning authority
+Object Type	Canonical type classification
+Identifier Value	Globally unique value
+Version Reference	Optional version reference
+
+These components define the logical structure of an identifier, independent of its physical representation.
+
+8. Namespace Model
+
+Namespaces SHALL:
+
+Prevent identifier collisions.
+Support organizational autonomy.
+Enable federation.
+Preserve uniqueness across deployments.
+
+A namespace SHALL itself possess a unique identifier.
+
+Example conceptual hierarchy:
+
+Global Atlas Namespace
+        │
+        ├── Organization Namespace
+        │       ├── Project Namespace
+        │       └── Project Namespace
+        │
+        └── Organization Namespace
+
+Namespaces SHALL NOT alter object identity.
+
+9. Identifier Lifecycle
+
+Identifiers SHALL progress through the following lifecycle.
+
+Reserved
+    │
+Assigned
+    │
+Validated
+    │
+Active
+    │
+Referenced
+    │
+Archived
+
+Once assigned, an identifier SHALL NEVER be reused.
+
+10. Version Identification
+
+Atlas distinguishes between:
+
+Identity	Purpose
+Object Identifier	Persistent identity across the object's lifetime
+Version Identifier	Identity of a specific revision
+
+Example:
+
+Object ID
+    │
+    ├── Version 1
+    ├── Version 2
+    ├── Version 3
+    └── Version 4
+
+Version identifiers SHALL preserve lineage to the parent object identifier.
+
+11. Reference Model
+
+Atlas supports the following reference types.
+
+Reference	Description
+Direct Reference	References a specific object
+Versioned Reference	References a specific version
+Latest Reference	References the current approved version
+Relative Reference	Context-dependent reference
+External Reference	References entities outside Atlas
+
+Reference semantics SHALL be explicit.
+
+12. Resolution Model
+
+Every identifier SHALL be resolvable.
+
+Resolution SHALL determine:
+
+Object existence
+Canonical type
+Current lifecycle state
+Version information
+Namespace
+Governance metadata
+
+Resolution mechanisms SHALL remain implementation-independent.
+
+13. Traceability
+
+Identifiers SHALL support traceability across:
+
+Engineering artifacts
+Decisions
+Events
+Workflows
+Communications
+Policies
+Trust assertions
+Relationships
+
+Identifiers SHALL enable end-to-end navigation through the Atlas ecosystem.
+
+14. Governance
+
+Every identifier SHALL define:
+
+Issuing authority
+Namespace owner
+Validation authority
+Assignment policy
+Retention policy
+Resolution policy
+Audit requirements
+
+Identifier governance SHALL be independent of object content.
+
+15. Quality Requirements
+
+Every identifier SHALL satisfy:
+
+Uniqueness
+Persistence
+Stability
+Non-reusability
+Resolvability
+Traceability
+Scalability
+Interoperability
+
+Quality SHALL be continuously verifiable.
+
+16. Conformance
+
+An Atlas implementation conforms to the Identifier Model if it:
+
+Assigns globally unique identifiers.
+Preserves identifier immutability.
+Supports namespace management.
+Supports version identifiers.
+Enables identifier resolution.
+Prevents identifier reuse.
+Maintains identifier traceability.
+17. Future Evolution
+
+Future revisions MAY introduce:
+
+Decentralized identifier (DID) compatibility.
+Cross-enterprise namespace federation.
+Persistent web identifiers.
+Semantic identifier profiles.
+Quantum-safe identifier generation.
+Universal Atlas identifier registries.
+
+Extensions SHALL preserve canonical identifier semantics.
+
+Canonical Identifier Architecture
+Canonical Identifier
+│
+├── Namespace
+│     ├── Organization
+│     ├── Project
+│
+├── Identity
+│     ├── Object ID
+│     ├── Type
+│
+├── Version
+│     ├── Version ID
+│     ├── Revision
+│
+├── Resolution
+│     ├── Current State
+│     ├── Location
+│
+└── Governance
+      ├── Issuer
+      ├── Policies
+      └── Audit
