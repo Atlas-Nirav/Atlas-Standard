@@ -1,0 +1,126 @@
+ACC-003 — Core Principles
+
+Document ID: ACC-003
+Title: Core Principles
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification establishes the fundamental principles that govern the Atlas Engineering Cognition Framework (AECF).
+
+These principles define the architectural philosophy of Atlas and provide the normative foundation for all concepts, specifications, and implementations.
+
+2. Scope
+
+The Core Principles apply to:
+
+Atlas Core Concepts (ACC)
+Atlas Hivemind Specification (AHS)
+Engineering Understanding Specification (EUS)
+Engineering Memory Specification (EMS)
+Engineering Knowledge Specification (EKS)
+Engineering Evidence Specification (EES)
+Engineering Reasoning Specification (ERS)
+Engineering Capability Specification (ECS)
+Decision Support Specification (DSS)
+
+All Atlas specifications SHALL conform to these principles.
+
+3. Core Principles
+3.1 Reality-Oriented
+
+Atlas SHALL model engineering reality rather than documentation, software artifacts, or data alone.
+
+All engineering cognition SHALL ultimately correspond to the real-world engineering domain.
+
+3.2 Evidence-Based
+
+Engineering conclusions SHALL be derived from verifiable engineering evidence.
+
+Assertions without supporting evidence SHALL NOT be treated as established understanding.
+
+3.3 Context-Aware
+
+Engineering concepts SHALL be interpreted within their applicable engineering context.
+
+Context SHALL be considered an essential component of engineering cognition.
+
+3.4 Explainable
+
+Every engineering conclusion SHALL be explainable through traceable reasoning and supporting evidence.
+
+Atlas SHALL prioritize transparency over opaque decision-making.
+
+3.5 Traceable
+
+Engineering cognition SHALL maintain traceability between:
+
+Reality
+Observation
+Evidence
+Understanding
+Reasoning
+Memory
+Knowledge
+3.6 Consistent
+
+Engineering concepts SHALL maintain consistent meaning across all Atlas specifications.
+
+Conflicting interpretations SHALL NOT exist within the framework.
+
+3.7 Evolvable
+
+Engineering cognition SHALL evolve as new observations, evidence, and engineering knowledge become available.
+
+Atlas SHALL support continuous refinement without compromising conceptual integrity.
+
+3.8 Technology Independent
+
+The Atlas Engineering Cognition Framework SHALL remain independent of implementation technologies.
+
+Its concepts SHALL apply regardless of programming language, AI model, database, hardware platform, or software architecture.
+
+3.9 Domain Independent
+
+Atlas SHALL provide a generic engineering cognition framework applicable across engineering disciplines.
+
+Domain-specific specialization SHALL extend, but SHALL NOT redefine, the Atlas Core Concepts.
+
+3.10 Human-Centric
+
+Atlas SHALL support and augment engineering decision-making.
+
+Final engineering authority SHALL remain with qualified human engineers unless explicitly delegated within a defined operational context.
+
+4. Normative Requirements
+
+All Atlas specifications SHALL:
+
+Conform to the Core Principles defined in this specification.
+Preserve conceptual consistency.
+Maintain traceability across engineering cognition.
+Avoid technology-specific assumptions.
+Support explainability and evidence-based reasoning.
+5. Conformance
+
+A specification conforms to ACC-003 if it:
+
+Implements the Core Principles defined herein.
+Does not contradict any principle.
+Maintains consistency with other Atlas specifications.
+Preserves the integrity of the Atlas Engineering Cognition Framework.
+6. Non-Goals
+
+This specification does not:
+
+Define engineering methods.
+Specify implementation architecture.
+Mandate software technologies.
+Replace engineering standards or regulations.
+Define operational procedures.
+7. Future Evolution
+
+The Core Principles are intended to remain stable throughout the evolution of the Atlas Engineering Cognition Framework.
+
+Future revisions MAY introduce additional principles provided they do not invalidate or contradict the existing principles.

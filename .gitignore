@@ -1,0 +1,82 @@
+Version: 1.0.0-draft
+
+1. Purpose
+
+The Atlas Core Concepts (ACC) establish the canonical conceptual foundation of the Atlas Engineering Cognition Framework.
+
+The purpose of this specification is to define the fundamental engineering concepts, their meanings, relationships, and governing principles that are shared across all Atlas specifications and implementations.
+
+These concepts provide a common vocabulary and conceptual model that ensures consistency, interoperability, and architectural integrity throughout the Atlas ecosystem.
+
+2. Scope
+
+This specification defines the canonical concepts that describe engineering cognition independently of any software implementation, programming language, database, artificial intelligence model, or engineering discipline.
+
+The Atlas Core Concepts apply uniformly to all Atlas specifications, including but not limited to:
+
+Atlas Hivemind Specification (AHS)
+Engineering Understanding Specification (EUS)
+Engineering Memory Specification (EMS)
+Engineering Knowledge Specification (EKS)
+Engineering Evidence Specification (EES)
+Engineering Reasoning Specification (ERS)
+Engineering Capability Specification (ECS)
+Decision Support Specification (DSS)
+3. Objectives
+
+The Atlas Core Concepts SHALL:
+
+Establish a shared engineering vocabulary.
+Define the canonical meaning of each core concept.
+Describe the relationships between concepts.
+Eliminate conflicting definitions across specifications.
+Provide a stable conceptual foundation for future evolution.
+4. Principles
+
+The Atlas Core Concepts are governed by the following principles:
+
+Canonical
+
+Each concept SHALL have one authoritative definition.
+
+Consistent
+
+A concept SHALL maintain the same meaning throughout all Atlas specifications.
+
+Technology Independent
+
+Concepts SHALL not depend upon any implementation technology.
+
+Domain Independent
+
+Concepts SHALL remain applicable across engineering disciplines.
+
+Extensible
+
+New concepts MAY be introduced without altering the meaning of existing concepts.
+
+Traceable
+
+Relationships between concepts SHALL be explicitly defined.
+
+5. Relationships
+
+The Atlas Core Concepts serve as the conceptual foundation for every Atlas specification.
+
+All normative specifications SHALL reference the definitions established by the Atlas Core Concepts rather than redefining core terminology.
+
+6. Normative Statements
+
+The Atlas Core Concepts SHALL be regarded as the authoritative source for all fundamental terminology used throughout the Atlas Engineering Cognition Framework.
+
+No Atlas specification SHALL redefine a concept established by this specification in a manner that changes its canonical meaning.
+
+7. Non-Goals
+
+The Atlas Core Concepts do not:
+
+Define software architecture.
+Specify implementation details.
+Prescribe algorithms or technologies.
+Replace domain-specific engineering standards.
+Define operational workflows.

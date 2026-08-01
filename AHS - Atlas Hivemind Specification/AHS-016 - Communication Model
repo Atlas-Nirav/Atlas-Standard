@@ -1,4 +1,4 @@
-AHS-016 — Communication Model
+AHS-016 - Communication Model
 
 Document ID: AHS-016
 Title: Communication Model
@@ -254,6 +254,7 @@ Preserve traceability.
 Record diagnostic information.
 Support retry where appropriate.
 Prevent semantic corruption.
+
 13. Communication Quality Attributes
 
 Atlas communications SHALL be evaluated for:

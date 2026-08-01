@@ -1,0 +1,141 @@
+ACC-007 — Engineering Understanding
+
+Document ID: ACC-007
+Title: Engineering Understanding
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Engineering Understanding, the central cognitive concept of the Atlas Engineering Cognition Framework (AECF).
+
+Engineering Understanding represents Atlas's current, coherent, and evolving representation of Engineering Reality, constructed from Engineering Evidence within a defined engineering context.
+
+It serves as the primary cognitive artifact upon which reasoning, decision support, memory, and knowledge are built.
+
+2. Scope
+
+This specification applies to all Engineering Understanding maintained, evolved, or consumed within the Atlas Engineering Cognition Framework.
+
+Engineering Understanding may represent:
+
+Engineering systems
+Physical assets
+Digital assets
+Structures
+Components
+Processes
+Projects
+Behaviors
+Conditions
+Risks
+Constraints
+Engineering problems
+Engineering solutions
+3. Canonical Definition
+
+Engineering Understanding is the continuously evolving cognitive representation of Engineering Reality, constructed from Engineering Evidence, interpreted within context, and maintained to support engineering reasoning, decision-making, and knowledge evolution.
+
+Engineering Understanding is Atlas's model of reality, not reality itself.
+
+4. Characteristics
+
+Engineering Understanding SHALL possess the following characteristics.
+
+4.1 Reality-Based
+
+Engineering Understanding SHALL represent Engineering Reality.
+
+4.2 Evidence-Based
+
+Engineering Understanding SHALL be supported by Engineering Evidence.
+
+4.3 Context-Aware
+
+Engineering Understanding SHALL always exist within an explicit engineering context.
+
+4.4 Explainable
+
+Every element of Engineering Understanding SHALL be explainable through supporting evidence and reasoning.
+
+4.5 Traceable
+
+Engineering Understanding SHALL maintain traceability to the Engineering Evidence from which it is constructed.
+
+4.6 Evolvable
+
+Engineering Understanding SHALL evolve as Engineering Evidence changes.
+
+4.7 Consistent
+
+Engineering Understanding SHALL maintain internal logical consistency.
+
+4.8 Action-Oriented
+
+Engineering Understanding SHALL support engineering reasoning and informed decision-making.
+
+5. Relationships
+
+Engineering Understanding is the central cognitive model of Atlas.
+
+Engineering Reality
+        │
+        ▼
+Engineering Observation
+        │
+        ▼
+Engineering Evidence
+        │
+        ▼
+Engineering Understanding
+      ┌──┼───────────┐
+      ▼  ▼           ▼
+Reasoning Memory Decision Support
+      │
+      ▼
+Engineering Knowledge
+
+Engineering Understanding:
+
+Is constructed from Engineering Evidence.
+Supports Engineering Reasoning.
+Produces Decision Support.
+Is preserved by Engineering Memory.
+Contributes to Engineering Knowledge through long-term validation.
+6. Responsibilities
+
+Engineering Understanding is responsible for:
+
+Representing Engineering Reality.
+Integrating Engineering Evidence.
+Maintaining engineering context.
+Supporting engineering reasoning.
+Supporting engineering decisions.
+Evolving as new evidence becomes available.
+Providing a coherent engineering model.
+7. Normative Requirements
+
+Engineering Understanding SHALL:
+
+Be constructed from Engineering Evidence.
+Maintain explicit engineering context.
+Support explainable engineering reasoning.
+Preserve traceability to supporting evidence.
+Evolve when Engineering Evidence changes.
+Remain internally consistent.
+
+Atlas SHALL NOT treat unsupported assumptions as Engineering Understanding.
+
+8. Non-Goals
+
+Engineering Understanding does not:
+
+Replace Engineering Reality.
+Replace Engineering Evidence.
+Replace human engineering judgment.
+Represent permanent Engineering Knowledge.
+Represent archived Engineering Memory.
+Prescribe engineering decisions.
+9. Future Evolution
+
+Future revisions MAY extend the representation of Engineering Understanding with richer semantic models, confidence metrics, relationship models, and contextual structures, provided the canonical definition established by this specification remains unchanged.

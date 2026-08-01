@@ -1,0 +1,258 @@
+AFS-002 — Canonical Atlas Resource
+
+Document ID: AFS-002
+Title: Canonical Atlas Resource
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Canonical Atlas Resource (CAR), the universal foundational abstraction of the Atlas Engineering Cognition Framework (AECF).
+
+The Canonical Atlas Resource establishes the common identity, structure, lifecycle, governance, and interoperability characteristics shared by every identifiable entity within the Atlas ecosystem.
+
+Every Atlas specification SHALL derive its domain-specific resources from the Canonical Atlas Resource.
+
+2. Scope
+
+This specification defines:
+
+Canonical Atlas Resource
+Universal inheritance model
+Resource identity
+Resource characteristics
+Resource lifecycle
+Resource relationships
+Resource governance
+Resource extensibility
+
+This specification applies to every identifiable Atlas entity.
+
+3. Canonical Definition
+
+A Canonical Atlas Resource (CAR) is the universal foundational entity representing any identifiable, governable, versionable, referenceable, and interoperable artifact within the Atlas Engineering Cognition Framework.
+
+A Canonical Atlas Resource provides shared capabilities.
+
+It SHALL NOT define domain-specific behavior.
+
+4. Objectives
+
+The Canonical Atlas Resource SHALL:
+
+Establish a universal root type.
+Eliminate duplication across specifications.
+Provide consistent identity.
+Support governance.
+Enable interoperability.
+Support extensibility.
+Preserve traceability.
+Enable long-term evolution.
+5. Universal Resource Principle
+
+Atlas adopts the following foundational principle.
+
+Every identifiable entity within the Atlas Engineering Cognition Framework SHALL be represented as a Canonical Atlas Resource.
+
+This principle applies uniformly across all Atlas specification families.
+
+6. Resource Principles
+
+Every Canonical Atlas Resource SHALL satisfy the following principles.
+
+Identity
+
+Every resource SHALL possess a canonical identity.
+
+Uniqueness
+
+Every resource SHALL be uniquely identifiable.
+
+Persistence
+
+Resource identity SHALL remain persistent throughout its lifecycle.
+
+Governance
+
+Every resource SHALL be governable.
+
+Versionability
+
+Every resource SHALL support governed evolution where applicable.
+
+Traceability
+
+Every resource SHALL remain traceable throughout its existence.
+
+Interoperability
+
+Every resource SHALL support standardized interaction.
+
+Extensibility
+
+Resources SHALL permit governed extension without altering canonical semantics.
+
+7. Canonical Resource Characteristics
+
+Every Canonical Atlas Resource SHALL possess the following characteristics.
+
+Characteristic	Description
+Identity	Canonical unique identity
+Type	Resource classification
+Namespace	Logical ownership
+URI	Canonical Atlas URI
+Metadata	Shared descriptive information
+Lifecycle	Resource lifecycle state
+Version	Version information
+Relationships	Connections to other resources
+References	Canonical references
+Governance	Applicable governance
+Security	Technical security metadata
+Capabilities	Declared capabilities
+Extensions	Approved extension points
+
+These characteristics form the minimum contract of every Atlas Resource.
+
+8. Universal Inheritance Model
+
+Every Atlas specification SHALL derive its primary resource types from the Canonical Atlas Resource.
+
+Canonical Atlas Resource (CAR)
+│
+├── Canonical Atlas Object (ADS)
+├── Canonical Policy Object (APS)
+├── Canonical Workflow Object (AWS)
+├── Canonical Cognitive Object (AIS)
+│
+├── Canonical Event
+├── Canonical Document
+├── Canonical Package
+├── Canonical Organization
+├── Canonical Person
+├── Canonical Agent
+├── Canonical Digital Twin
+├── Canonical Asset
+├── Canonical Sensor
+├── Canonical Service
+└── Future Canonical Resources
+
+Derived resource types SHALL preserve the semantics of the Canonical Atlas Resource.
+
+9. Resource Relationships
+
+Canonical Atlas Resources MAY relate to one another through governed relationship types.
+
+Examples include:
+
+Contains
+References
+Depends On
+Implements
+Governs
+Executes
+Produces
+Consumes
+Represents
+Owns
+
+Relationship semantics SHALL be defined by the applicable specification family.
+
+10. Resource Lifecycle
+
+Every Canonical Atlas Resource SHALL support the following conceptual lifecycle.
+
+Defined
+   │
+Created
+   │
+Active
+   │
+Modified
+   │
+Deprecated
+   │
+Archived
+
+Specialized resource types MAY extend this lifecycle while preserving its canonical meaning.
+
+11. Resource Governance
+
+Every Canonical Atlas Resource SHALL define:
+
+Resource Owner
+Governing Authority
+Applicable Policies
+Applicable Standards
+Audit Requirements
+Retention Requirements
+
+Governance SHALL remain independently auditable.
+
+12. Resource Extensibility
+
+Canonical Atlas Resources SHALL support governed extension.
+
+Extensions:
+
+SHALL preserve canonical semantics.
+SHALL remain namespace-qualified.
+SHALL declare compatibility.
+SHALL remain independently versioned.
+13. Resource Quality
+
+Every Canonical Atlas Resource SHALL satisfy:
+
+Correctness
+Consistency
+Traceability
+Interoperability
+Extensibility
+Explainability
+Auditability
+Governance Compliance
+
+Quality SHALL be independently verifiable.
+
+14. Conformance
+
+A Canonical Atlas Resource implementation conforms if it:
+
+Implements the mandatory resource characteristics.
+Preserves canonical identity.
+Supports governed lifecycle management.
+Supports standardized relationships.
+Maintains interoperability.
+Supports extension.
+Preserves traceability.
+15. Future Evolution
+
+Future revisions MAY introduce:
+
+Semantic resource discovery.
+Autonomous resource management.
+Federated resource registries.
+Digital resource twins.
+AI-native resource capabilities.
+Machine-verifiable resource semantics.
+
+Extensions SHALL preserve canonical resource semantics.
+
+Canonical Atlas Resource Architecture
+                 Canonical Atlas Resource
+                           │
+      ┌────────────────────┼────────────────────┐
+      ▼                    ▼                    ▼
+ Identity             Structure          Governance
+      │                    │                    │
+      └──────────────┬─────┴──────────────┬─────┘
+                     ▼                    ▼
+             Domain Specifications   Future Extensions
+                     │
+      ┌──────────────┼──────────────┐
+      ▼              ▼              ▼
+     ADS            APS            AWS
+                     │
+                     ▼
+                    AIS
+
+The Canonical Atlas Resource provides the common technical abstraction that unifies every identifiable entity within the Atlas Engineering Cognition Framework.

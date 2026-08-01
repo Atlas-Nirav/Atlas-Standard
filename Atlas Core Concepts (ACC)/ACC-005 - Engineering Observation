@@ -1,0 +1,117 @@
+ACC-005 — Engineering Observation
+
+Document ID: ACC-005
+Title: Engineering Observation
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines Engineering Observation, the process by which information about Engineering Reality is acquired for engineering cognition.
+
+Engineering Observation serves as the interface between Engineering Reality and the Atlas Engineering Cognition Framework. It captures facts, measurements, events, and conditions that may later be evaluated as engineering evidence.
+
+2. Scope
+
+This specification applies to all observations originating from Engineering Reality, regardless of their source or method of acquisition.
+
+Engineering Observations may originate from:
+
+Human engineers
+Sensors and IoT devices
+Engineering documents
+CAD/BIM models
+Simulations
+Digital twins
+Inspection reports
+Images and videos
+Laboratory testing
+Monitoring systems
+External engineering information sources
+3. Canonical Definition
+
+Engineering Observation is the acquisition of information describing Engineering Reality through observation, measurement, monitoring, inspection, simulation, documentation, or other verifiable means.
+
+An observation records what is perceived or measured. It does not determine whether the information is valid, relevant, or sufficient.
+
+4. Characteristics
+
+Engineering Observation SHALL possess the following characteristics.
+
+4.1 Reality-Based
+
+Every observation SHALL originate from Engineering Reality.
+
+4.2 Time-Bound
+
+Every observation SHALL occur at a specific point or period in time.
+
+4.3 Source-Identified
+
+Every observation SHALL identify its originating source.
+
+4.4 Contextual
+
+Every observation SHALL include sufficient contextual information to support interpretation.
+
+4.5 Verifiable
+
+Observations SHOULD be capable of independent verification where practical.
+
+4.6 Neutral
+
+An observation SHALL record information without asserting engineering conclusions.
+
+5. Relationships
+
+Engineering Observation transforms Engineering Reality into observable information.
+
+Engineering Reality
+        │
+        ▼
+Engineering Observation
+        │
+        ▼
+Engineering Evidence
+
+Engineering Observation:
+
+Originates from Engineering Reality.
+Produces candidate information for Engineering Evidence.
+Does not perform reasoning or interpretation.
+6. Responsibilities
+
+Engineering Observation is responsible for:
+
+Capturing information about Engineering Reality.
+Preserving the integrity of observed information.
+Recording observation context.
+Recording observation source.
+Recording observation time.
+Providing inputs for evidence evaluation.
+7. Normative Requirements
+
+Engineering Observations SHALL:
+
+Originate from Engineering Reality.
+Preserve observed information without modification.
+Record source information.
+Record temporal context.
+Be distinguishable from engineering conclusions.
+Be available for subsequent evidence evaluation.
+
+Atlas SHALL NOT treat an observation as engineering evidence until it has been evaluated according to the Engineering Evidence specification.
+
+8. Non-Goals
+
+Engineering Observation does not:
+
+Validate correctness.
+Determine engineering significance.
+Produce engineering conclusions.
+Perform reasoning.
+Create Engineering Understanding.
+Create Engineering Knowledge.
+9. Future Evolution
+
+Future revisions MAY introduce additional observation mechanisms or metadata requirements without altering the canonical definition of Engineering Observation.
