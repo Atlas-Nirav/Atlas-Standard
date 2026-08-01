@@ -1,0 +1,315 @@
+APS-005 — Policy Evaluation
+
+Document ID: APS-005
+Title: Policy Evaluation
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Canonical Policy Evaluation Model (CPEM) for the Atlas Engineering Cognition Framework (AECF).
+
+The Canonical Policy Evaluation Model establishes the normative process for interpreting, evaluating, and producing decisions from Canonical Policy Objects while preserving determinism, explainability, traceability, governance, and semantic consistency.
+
+2. Scope
+
+This specification defines:
+
+Evaluation architecture
+Evaluation lifecycle
+Context resolution
+Policy selection
+Condition evaluation
+Conflict detection
+Decision production
+Explainability
+
+This specification applies to every policy evaluation performed within Atlas.
+
+3. Canonical Definition
+
+Policy Evaluation is the governed process of interpreting one or more Canonical Policy Objects against a defined evaluation context to produce a deterministic policy decision.
+
+Evaluation determines policy outcomes.
+
+It SHALL NOT modify policy definitions.
+
+4. Objectives
+
+The Policy Evaluation Model SHALL:
+
+Produce deterministic decisions.
+Preserve policy semantics.
+Support explainability.
+Support traceability.
+Support governance.
+Support interoperability.
+Support reproducibility.
+Enable policy composition.
+5. Evaluation Principles
+
+Every evaluation SHALL satisfy the following principles.
+
+Deterministic
+
+Equivalent policy sets and equivalent contexts SHALL produce equivalent decisions.
+
+Side-Effect Free
+
+Evaluation SHALL NOT modify:
+
+Policies
+Context
+Canonical Atlas Objects
+
+Evaluation is a read-only process.
+
+Explainable
+
+Every decision SHALL identify:
+
+Policies evaluated
+Conditions evaluated
+Applicable rules
+Final reasoning
+Traceable
+
+Every evaluation SHALL preserve:
+
+Context
+Policy versions
+Inputs
+Outputs
+Evidence
+Governed
+
+Evaluation SHALL follow governance policies.
+
+Version Aware
+
+Only explicitly selected policy versions SHALL participate in evaluation.
+
+6. Evaluation Inputs
+
+Every evaluation SHALL define:
+
+Input	Description
+Evaluation Request	Invocation
+Evaluation Context	Operational context
+Applicable Policies	Candidate policy set
+Canonical Objects	Objects under evaluation
+Supporting Evidence	Evidence references
+Trust Context	Security assertions
+Applicable Profiles	Governance profiles
+
+Inputs SHALL remain immutable throughout evaluation.
+
+7. Evaluation Lifecycle
+
+Every policy evaluation SHALL progress through the following lifecycle.
+
+Requested
+     │
+Prepared
+     │
+Context Resolved
+     │
+Policy Selected
+     │
+Conditions Evaluated
+     │
+Conflicts Resolved
+     │
+Decision Produced
+     │
+Obligations Generated
+     │
+Recorded
+
+Each stage SHALL be auditable.
+
+8. Context Resolution
+
+Evaluation SHALL resolve all required context before evaluating policies.
+
+Context MAY include:
+
+Object metadata
+Lifecycle state
+Trust assertions
+Relationships
+Workflow state
+Time
+Organization
+Project
+Regulatory jurisdiction
+
+Missing mandatory context SHALL result in an incomplete evaluation.
+
+9. Policy Selection
+
+Atlas SHALL identify the applicable policies using:
+
+Policy scope
+Object applicability
+Organization
+Project
+Lifecycle state
+Security classification
+Compliance profile
+Policy version
+
+Only selected policies SHALL participate in evaluation.
+
+10. Condition Evaluation
+
+Each selected policy SHALL evaluate:
+
+Preconditions
+Conditions
+Constraints
+Dependencies
+Required relationships
+Required evidence
+
+Conditions SHALL NOT modify evaluation context.
+
+11. Conflict Detection
+
+Evaluation SHALL detect policy conflicts.
+
+Examples include:
+
+Conflict	Example
+Permit vs Deny	Same action
+Multiple obligations	Different deadlines
+Competing priorities	Equal precedence
+Scope overlap	Conflicting applicability
+Version conflict	Different active versions
+
+Conflicts SHALL be explicitly identified.
+
+12. Conflict Resolution
+
+Atlas SHALL resolve conflicts using:
+
+Explicit override relationships.
+Higher governance authority.
+Higher policy priority.
+More specific applicability.
+Newer approved policy version.
+Human escalation if unresolved.
+
+Silent conflict resolution SHALL NOT occur.
+
+13. Decision Production
+
+Evaluation SHALL produce one or more policy decisions.
+
+Canonical decisions include:
+
+Decision	Meaning
+Permit	Authorized
+Deny	Prohibited
+Require	Mandatory
+Recommend	Advisory
+Warn	Warning
+Escalate	Human decision required
+
+Decisions SHALL reference the responsible policies.
+
+14. Obligation Generation
+
+Policy decisions MAY generate obligations.
+
+Each obligation SHALL define:
+
+Responsible participant
+Required action
+Completion criteria
+Due date
+Escalation policy
+
+Obligations SHALL be governed Canonical Atlas Objects.
+
+15. Explainability
+
+Every evaluation SHALL preserve:
+
+Applicable policies
+Evaluation sequence
+Conditions satisfied
+Conditions failed
+Conflicts
+Resolution process
+Final decision
+
+Explainability SHALL be sufficient for independent review.
+
+16. Evaluation Record
+
+Every evaluation SHALL generate an immutable evaluation record containing:
+
+Evaluation identifier
+Evaluation timestamp
+Evaluated policy versions
+Context snapshot
+Produced decisions
+Generated obligations
+Evidence references
+Audit metadata
+
+Evaluation records SHALL conform to the Canonical Atlas Object model.
+
+17. Conformance
+
+A policy evaluation implementation conforms if it:
+
+Implements the canonical evaluation lifecycle.
+Preserves deterministic evaluation.
+Resolves context before evaluation.
+Detects policy conflicts.
+Produces explainable decisions.
+Generates immutable evaluation records.
+Maintains complete traceability.
+18. Future Evolution
+
+Future revisions MAY introduce:
+
+Parallel policy evaluation.
+Distributed policy evaluation.
+Incremental evaluation.
+Predictive policy evaluation.
+AI-assisted explanation generation.
+Federated evaluation services.
+
+Extensions SHALL preserve canonical evaluation semantics.
+
+Canonical Policy Evaluation Architecture
+Evaluation Request
+         │
+         ▼
+Context Resolution
+         │
+         ▼
+Policy Selection
+         │
+         ▼
+Condition Evaluation
+         │
+         ▼
+Conflict Detection
+         │
+         ▼
+Conflict Resolution
+         │
+         ▼
+Decision Production
+         │
+         ▼
+Obligation Generation
+         │
+         ▼
+Evaluation Record
+
+Every evaluation SHALL produce a deterministic, explainable, and auditable outcome.

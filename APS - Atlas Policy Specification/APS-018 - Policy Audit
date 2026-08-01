@@ -1,0 +1,299 @@
+APS-018 — Policy Audit
+
+Document ID: APS-018
+Title: Policy Audit
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Canonical Policy Audit Model (CPAM) for the Atlas Engineering Cognition Framework (AECF).
+
+The Canonical Policy Audit Model establishes the principles, structures, processes, evidence requirements, and governance necessary to independently verify policy governance, evaluation, enforcement, compliance, exceptions, distribution, federation, and lifecycle activities.
+
+2. Scope
+
+This specification defines:
+
+Audit architecture
+Audit planning
+Audit execution
+Audit evidence
+Audit findings
+Audit reporting
+Audit governance
+Continuous assurance
+
+This specification applies to every governed policy activity within Atlas.
+
+3. Canonical Definition
+
+Policy Audit is the independent, evidence-based examination of Canonical Policy Objects and associated governance activities to determine conformity with applicable Atlas specifications, governance requirements, organizational obligations, and regulatory standards.
+
+Policy Audit evaluates governance.
+
+It SHALL NOT modify governance outcomes.
+
+4. Objectives
+
+The Policy Audit Model SHALL:
+
+Verify governance integrity.
+Verify policy compliance.
+Preserve accountability.
+Support certification.
+Enable continuous assurance.
+Preserve audit evidence.
+Support independent review.
+Enable reproducibility.
+5. Audit Principles
+
+Every audit SHALL satisfy the following principles.
+
+Independence
+
+Audit activities SHALL be performed independently of the audited activity.
+
+Evidence-Based
+
+Audit conclusions SHALL rely upon objective evidence.
+
+Traceability
+
+Every audit conclusion SHALL be traceable to supporting evidence.
+
+Reproducibility
+
+Equivalent audit evidence SHALL produce equivalent audit conclusions.
+
+Explainability
+
+Audit findings SHALL include sufficient rationale for independent review.
+
+Integrity
+
+Audit evidence SHALL remain immutable after collection.
+
+6. Audit Architecture
+Governed Activity
+        │
+        ▼
+Evidence Collection
+        │
+        ▼
+Audit Evaluation
+        │
+        ▼
+Findings
+        │
+        ▼
+Audit Report
+        │
+        ▼
+Corrective Actions
+
+Audit SHALL remain independent of operational governance.
+
+7. Auditable Activities
+
+Atlas recognizes the following auditable policy activities.
+
+Activity	Description
+Policy Authoring	Creation and modification
+Policy Approval	Governance approval
+Policy Evaluation	Runtime evaluation
+Policy Decision	Decision generation
+Policy Enforcement	Directive execution
+Policy Lifecycle	State transitions
+Policy Compliance	Compliance assessments
+Policy Exceptions	Exception management
+Policy Distribution	Artifact deployment
+Policy Federation	Cross-domain governance
+
+Future specifications MAY introduce additional auditable activities.
+
+8. Audit Planning
+
+Every audit SHALL define:
+
+Property	Description
+Audit ID	Unique identifier
+Audit Scope	Activities to be examined
+Audit Objectives	Expected outcomes
+Audit Criteria	Applicable requirements
+Audit Authority	Responsible auditor
+Audit Schedule	Planned execution
+Audit Method	Manual, automated, or hybrid
+
+Audit plans SHALL be governed Canonical Atlas Objects.
+
+9. Audit Evidence
+
+Every audit SHALL preserve evidence including:
+
+Policy versions
+Governance records
+Evaluation records
+Decision records
+Exception records
+Compliance reports
+Distribution logs
+Federation agreements
+Digital signatures
+Canonical Events
+
+Evidence SHALL remain immutable and attributable.
+
+10. Audit Findings
+
+Atlas defines the following canonical finding categories.
+
+Category	Description
+Conformant	Requirement satisfied
+Observation	Improvement opportunity
+Minor Nonconformity	Limited deviation
+Major Nonconformity	Significant deviation
+Critical Nonconformity	Severe governance failure
+
+Findings SHALL reference supporting evidence.
+
+11. Corrective Actions
+
+Every nonconformity SHALL define:
+
+Action identifier
+Related finding
+Responsible authority
+Required action
+Due date
+Completion criteria
+Verification method
+
+Corrective actions SHALL be independently governed.
+
+12. Audit Lifecycle
+
+Every audit SHALL progress through:
+
+Planned
+    │
+Authorized
+    │
+Evidence Collected
+    │
+Evaluated
+    │
+Findings Issued
+    │
+Corrective Actions
+    │
+Verified
+    │
+Closed
+    │
+Archived
+
+Lifecycle history SHALL remain immutable.
+
+13. Continuous Assurance
+
+Atlas SHALL support continuous audit through:
+
+Automated evidence collection
+Scheduled reassessment
+Policy change monitoring
+Compliance drift detection
+Risk-triggered audits
+Continuous reporting
+
+Continuous assurance SHALL complement—not replace—formal audits.
+
+14. Audit Governance
+
+Every audit SHALL define:
+
+Audit authority
+Lead auditor
+Independent reviewer
+Applicable governance domain
+Approval authority
+Retention requirements
+
+Audit governance SHALL remain independently auditable.
+
+15. Audit Quality
+
+Every audit SHALL satisfy:
+
+Independence
+Completeness
+Objectivity
+Repeatability
+Traceability
+Explainability
+Timeliness
+Auditability
+
+Quality SHALL be continuously measured.
+
+16. Audit Reporting
+
+Every audit report SHALL include:
+
+Audit scope
+Criteria
+Evidence summary
+Findings
+Risk assessment
+Corrective actions
+Overall conclusion
+Recommendations
+
+Reports SHALL be reproducible from the recorded evidence.
+
+17. Conformance
+
+A Policy Audit implementation conforms if it:
+
+Implements canonical audit principles.
+Preserves immutable evidence.
+Supports independent evaluation.
+Produces standardized findings.
+Tracks corrective actions.
+Maintains audit traceability.
+Supports continuous assurance.
+18. Future Evolution
+
+Future revisions MAY introduce:
+
+AI-assisted audit planning.
+Autonomous evidence collection.
+Predictive governance risk analysis.
+Cross-federation audit coordination.
+Formal audit proofs.
+Continuous certification services.
+
+Extensions SHALL preserve canonical audit semantics.
+
+Canonical Policy Audit Architecture
+Governed Activity
+        │
+        ▼
+Evidence Collection
+        │
+        ▼
+Audit Evaluation
+        │
+        ▼
+Audit Findings
+        │
+        ▼
+Corrective Actions
+        │
+        ▼
+Verification
+        │
+        ▼
+Audit Report
+
+Every audit transforms immutable governance evidence into independently verifiable assurance.

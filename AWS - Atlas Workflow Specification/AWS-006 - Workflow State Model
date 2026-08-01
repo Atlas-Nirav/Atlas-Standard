@@ -1,0 +1,332 @@
+AWS-006 — Workflow State Model
+
+Document ID: AWS-006
+Title: Workflow State Model
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Canonical Workflow State Model (CWSM) for the Atlas Engineering Cognition Framework (AECF).
+
+The Canonical Workflow State Model establishes the formal state machine governing workflow execution, including states, transitions, guards, triggers, actions, nested execution, parallel execution, terminal states, and execution invariants.
+
+2. Scope
+
+This specification defines:
+
+State architecture
+State semantics
+Transition semantics
+Triggers
+Guards
+Entry actions
+Exit actions
+Nested workflows
+Parallel execution
+Terminal behavior
+
+This specification applies to every Workflow Instance.
+
+3. Canonical Definition
+
+A Workflow State is a formally defined execution condition representing the current operational status of a Workflow Instance at a specific point in time.
+
+A state represents execution status.
+
+It SHALL NOT represent workflow definition.
+
+4. Objectives
+
+The Workflow State Model SHALL:
+
+Define deterministic execution.
+Eliminate ambiguous behavior.
+Support formal verification.
+Enable monitoring.
+Support recovery.
+Preserve traceability.
+Enable orchestration.
+Support interoperability.
+5. State Principles
+
+Every workflow state SHALL satisfy the following principles.
+
+Explicit State
+
+Every Workflow Instance SHALL always occupy one explicitly defined state.
+
+Implicit states SHALL NOT exist.
+
+Deterministic Transition
+
+Equivalent states receiving equivalent triggers SHALL produce equivalent transitions.
+
+State Integrity
+
+Only permitted transitions SHALL occur.
+
+Immutable History
+
+Historical states SHALL remain permanently recorded.
+
+Explainability
+
+Every transition SHALL include an explicit cause.
+
+Recoverability
+
+State recovery SHALL preserve execution consistency.
+
+6. Canonical Workflow States
+
+Atlas defines the following canonical states.
+
+State	Description
+Initialized	Workflow instance created
+Ready	Awaiting execution
+Running	Activities actively executing
+Waiting	Awaiting event, dependency, or participant
+Suspended	Execution paused
+Recovering	Failure recovery in progress
+Completed	Successfully finished
+Failed	Unrecoverable execution failure
+Cancelled	Intentionally terminated
+
+Profiles MAY extend these states while preserving canonical semantics.
+
+7. State Transition Model
+
+Canonical execution flow:
+
+Initialized
+      │
+      ▼
+Ready
+      │
+      ▼
+Running
+      │
+ ┌────┼───────────────┐
+ ▼    ▼               ▼
+Waiting Suspended Recovering
+      │        │          │
+      └────────┼──────────┘
+               ▼
+            Running
+               │
+        ┌──────┼────────┐
+        ▼               ▼
+Completed         Failed
+        │               │
+        └──────┬────────┘
+               ▼
+           Archived
+
+All transitions SHALL be explicitly defined.
+
+8. Transition Semantics
+
+Every transition SHALL define:
+
+Property	Description
+Transition ID	Unique identifier
+Source State	Origin
+Target State	Destination
+Trigger	Activating event
+Guard	Required condition
+Entry Actions	Actions on entering target
+Exit Actions	Actions before leaving source
+Generated Events	Produced Canonical Events
+
+Transitions SHALL remain deterministic.
+
+9. Triggers
+
+Atlas defines canonical trigger categories.
+
+Trigger	Description
+Manual	Human initiated
+Event	Canonical Event
+Time	Time-based activation
+Policy	Policy decision
+System	Runtime signal
+External	External integration
+AI	Authorized AI decision
+
+Triggers SHALL be independently traceable.
+
+10. Guard Conditions
+
+Every transition MAY define one or more guards.
+
+Examples include:
+
+Required approvals
+Input validation
+Resource availability
+Policy authorization
+Time constraints
+Dependency completion
+Security verification
+
+Transitions SHALL NOT occur while mandatory guards remain unsatisfied.
+
+11. Entry and Exit Actions
+
+Every state MAY define:
+
+Entry Actions
+
+Executed immediately after entering a state.
+
+Examples:
+
+Allocate resources
+Notify participants
+Start timers
+Generate events
+Exit Actions
+
+Executed immediately before leaving a state.
+
+Examples:
+
+Persist outputs
+Release resources
+Stop timers
+Record metrics
+
+Entry and exit actions SHALL preserve workflow semantics.
+
+12. Nested States
+
+Atlas supports hierarchical state machines.
+
+Example:
+
+Running
+│
+├── Review
+│     ├── Assigned
+│     ├── Reviewing
+│     └── Approved
+│
+└── Validation
+      ├── Executing
+      └── Passed
+
+Nested states SHALL preserve parent state semantics.
+
+13. Parallel States
+
+Atlas supports parallel execution regions.
+
+Example:
+
+Running
+│
+├── Structural Review
+│
+├── Cost Review
+│
+└── Safety Review
+
+Parallel regions SHALL define synchronization conditions before continuation.
+
+14. Terminal States
+
+Atlas defines three terminal states.
+
+State	Meaning
+Completed	Successful completion
+Failed	Unrecoverable failure
+Cancelled	Intentional termination
+
+Terminal states SHALL NOT transition to non-terminal states except through governed recovery mechanisms.
+
+15. State Invariants
+
+Every state SHALL define invariant conditions that remain true throughout its duration.
+
+Examples:
+
+State	Invariant
+Running	At least one executable activity exists
+Waiting	Awaiting a defined trigger or dependency
+Suspended	No active execution occurs
+Completed	All mandatory completion conditions satisfied
+
+Invariant violations SHALL generate Canonical Events.
+
+16. State Governance
+
+Every state SHALL define:
+
+Responsible authority
+Applicable policies
+Audit requirements
+Recovery permissions
+Monitoring requirements
+
+Governance SHALL remain active throughout state execution.
+
+17. Quality Requirements
+
+Every Workflow State Model SHALL satisfy:
+
+Determinism
+Completeness
+Explainability
+Recoverability
+Traceability
+Auditability
+Formal consistency
+Governance compliance
+
+Quality SHALL be independently verifiable.
+
+18. Conformance
+
+A Workflow State Model implementation conforms if it:
+
+Implements canonical states.
+Supports deterministic transitions.
+Enforces guard conditions.
+Supports entry and exit actions.
+Supports nested and parallel states.
+Preserves immutable state history.
+Maintains governance metadata.
+19. Future Evolution
+
+Future revisions MAY introduce:
+
+AI-driven adaptive state transitions.
+Probabilistic state analysis.
+Distributed state synchronization.
+Formal state verification.
+Self-healing state recovery.
+Digital Twin state alignment.
+
+Extensions SHALL preserve canonical state semantics.
+
+Canonical Workflow State Architecture
+Workflow Instance
+        │
+        ▼
+Current State
+        │
+ ┌──────┼─────────────┐
+ ▼      ▼             ▼
+Guards Triggers   Actions
+        │
+        ▼
+State Transition
+        │
+        ▼
+Next State
+        │
+        ▼
+Execution History
+
+The Workflow State Model provides the formal execution semantics that ensure every Atlas workflow behaves consistently, predictably, and reproducibly across all compliant implementations.

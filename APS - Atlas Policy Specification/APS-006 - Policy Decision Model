@@ -1,0 +1,278 @@
+APS-006 — Policy Decision Model
+
+Document ID: APS-006
+Title: Policy Decision Model
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Canonical Policy Decision Model (CPDM) for the Atlas Engineering Cognition Framework (AECF).
+
+The Canonical Policy Decision Model establishes the standardized representation, semantics, governance, lifecycle, and traceability of decisions produced through policy evaluation.
+
+Every policy evaluation SHALL produce one or more Canonical Policy Decisions.
+
+2. Scope
+
+This specification defines:
+
+Policy decision architecture
+Decision structure
+Decision semantics
+Decision outcomes
+Obligations
+Recommendations
+Justification
+Decision governance
+
+This specification applies to every policy decision produced within Atlas.
+
+3. Canonical Definition
+
+A Canonical Policy Decision (CPD) is a specialization of the Canonical Atlas Object representing the governed outcome of evaluating one or more Canonical Policy Objects against a defined evaluation context.
+
+A Policy Decision records what the policies concluded.
+
+It does not describe how the evaluation occurred.
+
+4. Objectives
+
+The Canonical Policy Decision SHALL:
+
+Preserve evaluation outcomes.
+Support explainability.
+Preserve governance.
+Preserve provenance.
+Enable auditing.
+Enable automation.
+Support interoperability.
+Support lifecycle management.
+5. Inheritance
+
+The Canonical Policy Decision SHALL inherit every mandatory property of the Canonical Atlas Object.
+
+Canonical Atlas Object
+        │
+        ▼
+Canonical Policy Decision
+        │
+ ┌──────┼──────────────┐
+ ▼      ▼              ▼
+Authorization Validation Workflow
+ Decision      Decision   Decision
+
+Future decision families SHALL extend this hierarchy.
+
+6. Canonical Decision Structure
+
+Every Canonical Policy Decision SHALL define:
+
+Property	Description
+Decision ID	Globally unique identifier
+Decision Type	Canonical classification
+Evaluation ID	Source evaluation
+Policy References	Evaluated policies
+Decision Status	Current lifecycle state
+Decision Authority	Producing authority
+Decision Timestamp	Time of creation
+Decision Version	Version identifier
+7. Decision Outcomes
+
+Atlas defines the following canonical decision outcomes.
+
+Outcome	Description
+Permit	Action authorized
+Deny	Action prohibited
+Require	Action mandatory
+Recommend	Advisory guidance
+Warn	Warning issued
+Escalate	Higher authority required
+Defer	Decision postponed pending additional information
+
+Every decision SHALL declare exactly one primary outcome.
+
+8. Decision Context
+
+Every decision SHALL preserve the complete evaluation context including:
+
+Evaluated object(s)
+Evaluation request
+Applicable policies
+Trust context
+Workflow state
+Lifecycle state
+Organization
+Project
+Jurisdiction
+Evaluation timestamp
+
+The context SHALL be immutable after decision creation.
+
+9. Decision Justification
+
+Every decision SHALL include justification sufficient for independent review.
+
+Justification SHALL identify:
+
+Applicable policies
+Conditions satisfied
+Conditions failed
+Conflict resolution steps
+Supporting evidence
+Final rationale
+
+Justification SHALL remain permanently associated with the decision.
+
+10. Decision Confidence
+
+Where applicable, a decision MAY include a confidence assessment.
+
+Atlas defines the following confidence levels.
+
+Level	Meaning
+C0	Unknown
+C1	Low confidence
+C2	Moderate confidence
+C3	High confidence
+C4	Very high confidence
+C5	Certain within defined policy assumptions
+
+Confidence SHALL NOT replace deterministic outcomes.
+
+It provides additional evaluation metadata.
+
+11. Generated Obligations
+
+A Canonical Policy Decision MAY generate obligations.
+
+Each obligation SHALL define:
+
+Obligation identifier
+Responsible participant
+Required action
+Completion criteria
+Due date
+Escalation conditions
+Current status
+
+Obligations SHALL be independently traceable.
+
+12. Recommendations
+
+Policy decisions MAY generate recommendations.
+
+Recommendations SHALL define:
+
+Suggested action
+Supporting rationale
+Priority
+Optionality
+Related engineering objectives
+
+Recommendations SHALL NOT override mandatory decisions.
+
+13. Decision Relationships
+
+Policy Decisions MAY relate to:
+
+Canonical Policy Objects
+Decision Records
+Canonical Events
+Canonical Atlas Objects
+Workflow Executions
+Validation Results
+Compliance Assessments
+
+Relationships SHALL conform to ADS-011 — Relationship Model.
+
+14. Decision Lifecycle
+
+Every Canonical Policy Decision SHALL support:
+
+Created
+    │
+Validated
+    │
+Approved
+    │
+Issued
+    │
+Implemented
+    │
+Closed
+    │
+Archived
+
+Lifecycle transitions SHALL be governed.
+
+15. Decision Governance
+
+Every decision SHALL define:
+
+Decision owner
+Evaluation authority
+Review authority
+Approval authority
+Applicable governance policies
+Audit requirements
+
+Governance SHALL remain attached throughout the decision lifecycle.
+
+16. Decision Quality
+
+Every Canonical Policy Decision SHALL satisfy:
+
+Correctness
+Explainability
+Traceability
+Determinism
+Completeness
+Consistency
+Governance compliance
+Auditability
+
+Quality SHALL be measurable.
+
+17. Conformance
+
+A Canonical Policy Decision conforms if it:
+
+Inherits the CAO contract.
+References a valid policy evaluation.
+Declares a canonical decision outcome.
+Preserves evaluation context.
+Includes justification.
+Supports lifecycle management.
+Maintains governance metadata.
+18. Future Evolution
+
+Future revisions MAY introduce:
+
+Probabilistic decision support.
+Multi-authority policy decisions.
+Distributed decision consensus.
+AI-assisted decision recommendations.
+Federated decision registries.
+Real-time adaptive decision updates.
+
+Extensions SHALL preserve canonical decision semantics.
+
+Canonical Policy Decision Architecture
+Policy Evaluation
+         │
+         ▼
+Policy Decision
+         │
+ ┌────────┼────────────────┐
+ ▼        ▼                ▼
+Outcome Justification Obligations
+     │        │                │
+     └────────┼────────────────┘
+              ▼
+       Decision Record
+              │
+              ▼
+     Workflow / Action
+
+The Policy Decision is the governed artifact that bridges policy evaluation and operational execution.

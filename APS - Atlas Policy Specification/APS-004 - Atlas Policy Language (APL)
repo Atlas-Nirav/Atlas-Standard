@@ -1,0 +1,272 @@
+APS-004 — Atlas Policy Language (APL)
+
+Document ID: APS-004
+Title: Atlas Policy Language (APL)
+Version: 1.0.0-draft
+Status: Draft
+
+1. Purpose
+
+This specification defines the Atlas Policy Language (APL), the canonical, declarative, implementation-independent language for expressing policies within the Atlas Engineering Cognition Framework (AECF).
+
+APL provides a standardized way to define policy intent, applicability, conditions, constraints, obligations, priorities, and effects while remaining independent of programming languages, rule engines, or execution technologies.
+
+2. Scope
+
+This specification defines:
+
+Policy language architecture
+Language semantics
+Expression model
+Conditions
+Constraints
+Effects
+Obligations
+Composition
+Extensibility
+
+APL applies to every Canonical Policy Object.
+
+3. Canonical Definition
+
+The Atlas Policy Language (APL) is a declarative language for expressing policy semantics independently of execution mechanisms, enabling consistent interpretation, evaluation, and governance across all Atlas implementations.
+
+APL expresses intent.
+
+It does not prescribe implementation.
+
+4. Objectives
+
+APL SHALL:
+
+Express policy semantics.
+Remain deterministic.
+Be implementation-independent.
+Support machine interpretation.
+Support human readability.
+Enable interoperability.
+Support extensibility.
+Preserve explainability.
+5. Language Principles
+
+Every APL statement SHALL satisfy the following principles.
+
+Declarative
+
+APL SHALL describe what is required.
+
+It SHALL NOT describe how to perform evaluation.
+
+Semantic
+
+APL SHALL express engineering meaning.
+
+Implementation details SHALL remain external.
+
+Deterministic
+
+Equivalent policy inputs SHALL produce equivalent policy outcomes unless explicitly defined otherwise.
+
+Readable
+
+APL SHALL remain understandable by engineers and governance professionals.
+
+Composable
+
+Policy expressions SHALL be reusable and composable.
+
+Versioned
+
+Every APL definition SHALL reference a policy version.
+
+6. Canonical Language Structure
+
+Every APL policy SHALL define:
+
+Element	Description
+Policy Identity	Policy identifier
+Applicability	Scope of application
+Conditions	Evaluation criteria
+Constraints	Required limitations
+Effects	Policy outcome
+Obligations	Required follow-up actions
+Metadata	Governance information
+7. Applicability Expressions
+
+APL SHALL support applicability expressions for:
+
+Object types
+Engineering domains
+Roles
+Organizations
+Projects
+Geographic regions
+Time periods
+Lifecycle states
+Trust levels
+
+Applicability SHALL be explicit.
+
+8. Condition Expressions
+
+APL SHALL support logical conditions.
+
+Canonical operators include:
+
+Operator	Meaning
+AND	All conditions must hold
+OR	Any condition may hold
+NOT	Negation
+EXISTS	Presence check
+FOR ALL	Universal quantification
+FOR ANY	Existential quantification
+
+Conditions SHALL remain side-effect free.
+
+9. Constraint Expressions
+
+Constraints MAY define:
+
+Numeric limits
+Cardinality
+Temporal restrictions
+Version requirements
+Relationship requirements
+Security requirements
+Quality thresholds
+
+Constraints SHALL be independently identifiable.
+
+10. Effect Expressions
+
+APL defines the following canonical effects.
+
+Effect	Meaning
+Permit	Allow action
+Deny	Reject action
+Require	Mandatory action
+Recommend	Advisory guidance
+Warn	Non-blocking notification
+Escalate	Require higher authority
+
+Every policy SHALL declare at least one effect.
+
+11. Obligation Expressions
+
+Policies MAY create obligations.
+
+Each obligation SHALL specify:
+
+Responsible actor
+Required action
+Completion condition
+Deadline
+Escalation rule
+
+Obligations SHALL remain traceable.
+
+12. Priority Model
+
+Policies SHALL support priorities.
+
+Example conceptual order:
+
+Critical
+
+↓
+
+High
+
+↓
+
+Normal
+
+↓
+
+Low
+
+↓
+
+Informational
+
+Priority SHALL influence evaluation order where applicable.
+
+13. Composition
+
+APL SHALL support policy composition.
+
+Supported forms include:
+
+Policy inclusion
+Policy extension
+Policy specialization
+Policy aggregation
+Policy inheritance
+
+Composition SHALL preserve semantic independence.
+
+14. Extensibility
+
+Organizations MAY extend APL through:
+
+Domain vocabularies
+Custom object types
+Engineering ontologies
+Industry standards
+
+Extensions SHALL preserve canonical language semantics.
+
+15. Validation
+
+Every APL definition SHALL be validated for:
+
+Structural correctness
+Semantic correctness
+Determinism
+Completeness
+Consistency
+Version compatibility
+
+APL validation SHALL conform to ADS-015 — Validation Model.
+
+16. Conformance
+
+An Atlas Policy Language implementation conforms if it:
+
+Supports canonical language elements.
+Preserves declarative semantics.
+Supports deterministic evaluation.
+Supports policy composition.
+Supports extensibility.
+Preserves explainability.
+17. Future Evolution
+
+Future revisions MAY introduce:
+
+Domain-specific language modules.
+AI-assisted policy authoring.
+Formal verification syntax.
+International engineering vocabularies.
+Semantic policy libraries.
+Executable policy profiles.
+
+Extensions SHALL preserve canonical APL semantics.
+
+Canonical Atlas Policy Language Architecture
+Canonical Policy Object
+          │
+          ▼
+Atlas Policy Language
+          │
+ ┌────────┼────────────────┐
+ ▼        ▼                ▼
+Applicability Conditions Effects
+     │        │                │
+     └────────┼────────────────┘
+              ▼
+       Policy Interpretation
+              │
+              ▼
+      Policy Evaluation Engine
+
+APL defines the meaning of policies. The evaluation engine interprets that meaning but does not redefine it.
